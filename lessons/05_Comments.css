@@ -1,0 +1,26 @@
+/* Sarlavhalar uchun stillar */
+
+h1 {
+    color: red;
+    background-color: aliceblue;
+}
+
+h2 {
+    color: blue;
+    font-size: large;
+    background-color: yellow;
+}
+
+/* Xatboshilar uchun stillar */
+
+p {
+    color: orange;
+    font-style: italic;
+}
+
+
+/* Tugmalar uchun stillar */
+
+.buttons-styles {
+    color: aqua;
+}
