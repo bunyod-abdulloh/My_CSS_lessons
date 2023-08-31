@@ -2,10 +2,55 @@
 <html>
     <head>
         <title>Combinators</title>
+        <style>
+            div p {
+                background-color: yellow;
+            }
+
+            p {
+                background-color: grey;
+            }
+
+            div > p {
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
     </head>
     <body>
+        <h1>Combinators Heading One</h1>
+        <hr>
+        <h2>Avlod selektori</h2>
+        <p>Belgilangan elementning avlodlari bo'lgan barcha elementlarni tanlab oladi</p>
         <div>
-            <h1>Combinators Heading One</h1>
+            <p>Paragraph 1: "div"ni ichida</p>
+            <p>Paragraph 2: "div"ni ichida</p>
+            <section>
+                <p>Paragraph 3: "div"/"section" ichida</p>
+            </section>
+            <p>Paragraph 4: "div"ni ichida</p>
+        </div>
+        <p>Paragraph 5: "div"ni ichida emas</p>
+
+        <hr>
+        <h2>Yon qo'shni qardosh selectorlar</h2>
+        <p>Bir elementni</p>
+
+        <div>
+            <p>Paragraph 1: "div"ni ichida</p>
+            <p>Paragraph 2: "div"ni ichida</p>
         </div>
     </body>
 </html>
+
+<!--
+    Yuqoridagi kod tahlili:
+    div p - div p ichidagi barcha elementlarni background colorini yellow qilishni buyurmoqda;
+    div > p - divga farzand bo'lgan p larni font familysini o'zgartir demoqda;
+    Bu turda ketma ketlik amal qiladi. div - p - section - p = birinchi p uchun farzand,
+    ikkinchi p sectionni farzandi, div uchun esa nevara hisoblanadi. div > p degani divga farzand bo'lgan
+    p larni tanla degani;
+    div p = Descendant selector (Avlod selektori);
+    div > p = Child selector (Farzand selektori)
+    = Adjacet sibling selector (qo'shni yoki qardosh, shajarani boshi bitta bo'lgan selektor);
+
+-->
