@@ -3,6 +3,7 @@
     <head>
         <title>Combinators</title>
         <style>
+            /*
             div p {
                 background-color: yellow;
             }
@@ -14,9 +15,15 @@
             div > p {
                 font-family: 'Courier New', Courier, monospace;
             }
+            */
+
+            div + p {
+                background-color: blueviolet;
+            }
         </style>
     </head>
     <body>
+        <!--
         <h1>Combinators Heading One</h1>
         <hr>
         <h2>Avlod selektori</h2>
@@ -30,7 +37,8 @@
             <p>Paragraph 4: "div"ni ichida</p>
         </div>
         <p>Paragraph 5: "div"ni ichida emas</p>
-
+        -->
+        
         <hr>
         <h2>Yon qo'shni qardosh selectorlar</h2>
         <p>Bir elementni</p>
@@ -39,6 +47,18 @@
             <p>Paragraph 1: "div"ni ichida</p>
             <p>Paragraph 2: "div"ni ichida</p>
         </div>
+
+        <p>Paragraph 4: "div"dan keyin</p>
+        <p>Paragraph 5: "div"dan keyin</p>
+
+        <div>
+            <p>Paragraph 5: "div"ni ichida</p>
+            <p>Paragraph 6: "div"ni ichida</p>
+        </div>
+
+        <p>Paragraph 7: "div"dan keyin</p>
+        <p>Paragraph 8: "div"dan keyin</p>
+
     </body>
 </html>
 
