@@ -3,7 +3,33 @@
     <head>
         <title>Inheritance</title>
     </head>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        section {
+            color: red;
+        }
+
+        p {
+            color: blue;
+            font-style: italic;
+        }
+    </style>
     <body>
-        <h1>Heading one</h1>
+        <section>
+            <div>
+                <h1>Heading one</h1>
+                <p>Paragraph</p>
+            </div>
+        </section>
     </body>
 </html>
+
+<!--
+    Agar bir element o'zini ichida boshqa elementlarni saqlasa u ichidagi elementlar uchun ota onasi 
+    vazifasini bajaradi. Yuqoridagi kodda h1 va p uchun div ota ona deb hisoblanadi!
+    Agar element biror xossaga ega bo'lmasa ota onasidan oladi. Yuqoridagi kodda h1 da xossa 
+    yo'qligi sababli birinchi divdan oladi, unda yo'q bo'lsa sectiondan oladi
+-->
