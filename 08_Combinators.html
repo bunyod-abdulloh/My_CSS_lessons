@@ -17,8 +17,8 @@
             }
             */
 
-            div + p {
-                background-color: blueviolet;
+            div ~ p {
+                background-color: orange;
             }
         </style>
     </head>
@@ -38,7 +38,7 @@
         </div>
         <p>Paragraph 5: "div"ni ichida emas</p>
         -->
-        
+
         <hr>
         <h2>Yon qo'shni qardosh selectorlar</h2>
         <p>Bir elementni</p>
@@ -71,6 +71,8 @@
     p larni tanla degani;
     div p = Descendant selector (Avlod selektori);
     div > p = Child selector (Farzand selektori)
-    = Adjacet sibling selector (qo'shni yoki qardosh, shajarani boshi bitta bo'lgan selektor);
-
+    div + p = Adjacet sibling selector (qo'shni yoki qardosh, shajarani boshi bitta bo'lgan selektor);
+    div + p = yopilgan </div> elementidan keyingi kelgan birinchi p elementiga ko'rsatilgan hossani berilishini bildiradi;
+    div p larning o'rniga class idlardan ham foydalansa bo'ladi!;
+    = General sibling selector(Umumiy qardosh selektor), bir elemetnga qo'shni bo'lgan barcha elementlarni tanlash uchun ishlatiladi;
 -->
