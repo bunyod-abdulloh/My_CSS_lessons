@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class va qo'shma selektorlar</title>
+        <style>
+            /*
+            .text-red { 
+                color: red;
+            }
+
+            .text-bold { 
+                font-weight: bold;
+            }
+
+            .text-green {
+                color: green;
+            }
+
+            .text-italic {
+                font-style: italic;
+                background-color: orange;
+            }
+            */
+
+            h1 {
+                font-size:larger;
+                background-color: orange;
+            }
+
+            h1.active {
+                background-color: yellow;
+                color: blue;
+            }
+
+            a {
+                color: white;
+                background-color: black;
+            }
+
+            a.active {
+                color: green;
+                background-color: white;
+            }
+                
+        </style>
+    </head>
+    <body>
+        <!--    
+        <h1>
+            Class va qo'shma selektorlar
+        </h1>
+        <div class="text-red text-bold">Qizil va qalin ko'rinishdagi matn</div><br>
+        <div class="text-green text-bold">Yashil va qalin ko'rinishdagi matn</div><br>
+        <h1 class="text-green text-italic">Yashil ko'rinishdagi matn</h1>
+        <h2 class="text-italic text-red">Heading two</h2>
+        <h3 class="text-red text-green">Heading three</h3> <!--Bu yerda matn green bo'lishini sababi green classi style qismda eng oxirida turibdi.
+            Agar o'xshash xossalar bitta classda berilsa style qismdagi eng oxirgisini oladi-->
+        -->
+        <h1 class="active">Sarlavha 1 bu yerda active classi ishlatilgan</h1>
+        <h1>Sarlavha 2</h1>
+
+        <a href="#" class="active">Havola 1 bu tagda active classi ishlatilgan</a>
+        <a href="#">Havola 2</a>
+    </body>
+</html>
+
+<!--
+    h1.active - h1 tegini active classiga ega bo'lganini tanlab oladi
+    bu combined selectors deyiladi
+-->
