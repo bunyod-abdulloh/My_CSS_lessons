@@ -2,10 +2,46 @@
 <html>
     <head>
         <title>Margin collapsing va shorthands</title>
+        <style>
+            .box1 {
+                margin: 10px 30px 15px 40px;
+                padding: 55px 10px 15px 30px;
+                background-color: orange;
+                border-top: 5px solid grey; 
+                border-bottom: 3px solid red;
+                border-right: 10px solid black;
+                border-left: 25px solid blue;
+            }
+            
+            .box2 {
+                margin: 20px;
+                background-color: violet;
+            }
+        </style>
     </head>
     <body>
         <div>
             <h1>Margin collapsing va shorthands</h1>
         </div>
+        <div>
+            <h1 class="box1">Quti 1</h1>
+            <h1 class="box2">Quti 2</h1>
+        </div>
     </body>
 </html>
+
+<!--
+    margin collapsing - top va bottom marginlar to'qnashganda qaysi birini 
+    qiymati yuqori bo'lsa o'shanisini oladi! Masalan: Yuqoridagi kodda box1ning margini 
+    30px bo'lganligi sababli box1nikini olgan. Bu hodisa left va right marginlarda kuzatilmaydi!
+    
+    9-qatorda border-width, border-style va border-color 
+    xossalari bitta qatorda berildi. Bu qisqartirib yozish, ya'ni Shorthands deyiladi;
+    
+    margin:
+    2 ta qiymat berilsa, top, bottom = 10px | left, right = 30px;
+    3 ta berilsa, top = 10px | left/right = 30px | bottom = 15px
+    4 ta berilsa, top = 10px | right = 30px | bottom = 15px | left = 40px;
+    
+    Padding ham huddi shu tartibda amalga oshiriladi!
+-->
