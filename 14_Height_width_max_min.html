@@ -14,15 +14,81 @@
 
             .box {
                 background-color: orange;
-                height: 100%;
-                width: 25%;
+                max-height: max-content;
+                max-width: max-content;
                 margin: 10px;
+            }
+
+            .box2 {
+                background-color: aqua;
+                max-height: 150px;
+                max-width: max-content;
+                overflow: auto;
+            }
+
+            .min-height-h2 {
+                background-color: brown;
+                min-height: 10px;
+            }
+
+            .heading-four {
+                background-color: cadetblue;
+                min-width: 10px;
             }
         </style>
     </head>
     <body>
         <div class="box">
             <h1>Height(balandlik) width(kenglik), max va min</h1>
+        </div>
+
+        <div class="min-height-h2">
+            <h2>
+                Min <br>height<br>(balandlik) width(kenglik), <br>max va min
+            </h2>
+        </div>
+
+        <div class="box2">
+            <h3>
+                Toğlar ila, toşlar ila,<br>
+                Chaqirayin Mavlom Seni.<br>
+                Sahar vaqti quşlar ila,<br>
+                Chaqirayin Mavlom Seni...<br><br>
+
+                Suv tubida mohi ila,<br>
+                Sahro içra ohu ila,<br>
+                Telba bölib "Yo, Hu" ila<br>
+                Chaqirayin Mavlom Seni...<br><br>
+
+                Samo uzra Iso ila,<br>
+                Tur toğida Muso ila.<br>
+                Qölimdagi aso ila,<br>
+                Chaqirayin Mavlom Seni...<br><br>
+
+                Hasta quling Ayyub ila,<br>
+                Közi yoshli Ya'qub ila.<br>
+                Ul Muhammad mahbub ila,<br>
+                Chaqirayin Mavlom Seni...<br><br>
+
+                Ham hamd u shukrulloh ila,<br>
+                Vaslu "Qulhuvalloh" ila.<br>
+                Doimo zikrulloh ila,<br>
+                Chaqirayin Mavlom Seni...<br><br>
+
+                Angladim dunyo holini,<br>
+                Tark etdim qiyr u qolini.<br>
+                Yalang oyoq, yalang boş la,<br>
+                Chaqirayin Mavlom Seni...<br><br>
+
+                Yunus öqir tillar ila,<br>
+                Ul qumri bulbullar ila.<br>
+                Haqni sevgan "qullar" ila,<br>
+                Chaqirayin Mavlom Seni...<br><br>
+            </h3>
+        </div>
+
+        <div class="heading-four">
+            <h4>Heading fourda nimadir bor</h4>
         </div>
     </body>
 </html>
@@ -36,4 +102,10 @@
     html = 50 percent bo'lsa, body html(50 percenti)ning 50 percentini oladi, 
     .box esa shu bodyning 100 percentini oladi.
     
+    max-height/max-width maksimum ko'rsatilgan miqdordan oshmasligi kerakligini ko'rsatadi;
+
+    min-width/min-height ko'rsatilgan miqdordan kamaymasligi lozim!
+    buni ishlashi tekshirish uchun browser oynasi kichraytirilsa yaqqol seziladi.
+    agar width o'zi ishlatilsa va browser kichraytirilsa browserni pastki qismida scroller 
+    paydo bo'ladi.
 -->
