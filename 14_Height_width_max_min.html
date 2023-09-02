@@ -5,16 +5,17 @@
         <style>
 
             html {
-                height: 100%;
+                height: 50%;
             }
 
             body {
-                height: 100%; 
+                height: 50%; 
             }
 
             .box {
                 background-color: orange;
                 height: 100%;
+                width: 25%;
                 margin: 10px;
             }
         </style>
@@ -28,5 +29,11 @@
 
 <!--
     height 100% berilsa o'zidan oldingi parentslarini heighti nechchiga
-    teng bo'lsa o'shanga teng bo'ladi.
+    teng bo'lsa o'shanga teng bo'ladi. Yuqoridagi kodda .boxga height 100%
+    berilgani bilan undan yuqoridagi parentsi htmlda height 50% turibdi. 
+    Demak boxdagi va bodydagi height html tagidagi 50% ning hammasiga ya'ni 
+    100 % iga joylanadi. Agar .box = 100 percent, body = 50 percent,
+    html = 50 percent bo'lsa, body html(50 percenti)ning 50 percentini oladi, 
+    .box esa shu bodyning 100 percentini oladi.
+    
 -->
