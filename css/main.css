@@ -20,7 +20,14 @@
     padding: 10px;
 }
 
+.main-navigation__item a {
+    color: #efb6df;
+};
+
+
+/* Footer styles
 .footer {
     background-color: black;
     color: white;
 }
+*/
