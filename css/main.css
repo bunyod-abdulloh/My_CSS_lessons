@@ -1,4 +1,9 @@
 
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
 /* Main header styles */
 
 .main-header__brand {
@@ -21,8 +26,16 @@
 }
 
 .main-navigation__item a {
-    color: #efb6df;
-};
+    color: #05364d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.main-navigation__item a:hover {
+    color: goldenrod;
+}
 
 
 /* Footer styles
