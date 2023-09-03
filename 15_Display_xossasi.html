@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display xossasi</title>
+        <style>
+            
+            .to-block {
+                background-color: aquamarine;
+                display: block;
+            }
+
+            .to-inline {
+                background-color: orange;
+                display: inline;
+            }
+
+
+            .to-inline-block {
+                background-color: yellow;
+                display: inline-block;
+                padding: 10px; 
+            }
+            
+            .to-none {
+                background-color: red;
+                display: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1 class="to-inline">Display xossasi</h1> <!-- <h1> aslida block element, lekin yuqorida styleda unga displayda 
+                inline berilganligi sababli inline elementga o'zgargan -->
+        </div>
+
+        <div>
+            <a href="#" class="to-block">Xossalar ko'p dunyoda</a>
+        </div>
+
+        <span class="to-inline-block">Inline-block misol</span>
+        <span class="to-none">Bu matn ko'rinmay qolishi mumkin</span>
+    </body>
+</html>
+
+<!--
+    Block elementlar - har doim yangi qatordan boshlanadi, default parentslari widthiga teng bo'lad;
+    block elementlarga misol - <div>, <h1>, <h6>, <ul>, <li> va boshqalar; 
+
+    Inline elementlar - har doim yonma yon, ya'ni bitta qatorda ketma ket joylashadi,
+    faqat o'ziga kerakli widthni oladi;
+    inline elementlarga misol - <span>, <a> va boshqalar;
+
+    Display xossasi - bu bir elementni boshqasiga o'tkazishga yordam beradi. Masalan: block elementni 
+    inline lementga yoki aksini amalga oshiradi!
+
+    inline-blockda element o'zi kerakli joyni oladi va block elementga xos ayrim xossalarni ham oladi;
+
+    none esa matnlarni yashirib turish xususiyatiga ega, bu ko'proq JavaScriptda qo'llaniladi!
+-->
