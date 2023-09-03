@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text decoration. Pseudo classes, qoidalarni guruhlash</title>
+        <style>
+            /* Text decoration 
+            .heading-1 {
+                text-decoration: underline;
+            }
+            
+            .heading-2 {
+                text-decoration: line-through;
+            }
+
+            .link {
+                text-decoration: none;
+            }
+            */
+            
+            /* Pseudo classes
+            .heading-3:hover {
+                background-color: black;
+                color: whitesmoke;
+            }
+            
+
+            .heading-3:active {
+                background-color: orange;
+                color: black;
+            }
+            */
+        
+            /* Grouping rules */
+
+            .heading-4, .heading-5 {
+                background-color: orange;
+                color: black;
+            }
+
+            .heading-5 {
+                border: 5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>
+                Text decoration. Pseudo classes, qoidalarni guruhlash
+            </h1>
+        </div>
+        <!--
+        <div>
+            <h1 class="heading-1">Tagiga chizilgan matn</h1>
+            <h2 class="heading-2">O'rtasidan chizilgan matn</h2>
+            <a href="https://google.com" class="link">Link ostidagi chiziqni yashirish</a>
+        </div>
+        -->
+
+        <!-- Pseudo classes -->
+        <div>
+            <h1 class="heading-3">Kursorni ushbu yozuv ustiga olib keling</h1>
+        </div>
+        <!-- /Pseudo classes -->
+
+        <!-- Grouping rules -->
+        <div>
+            <h2 class="heading-4">Qoidalarni guruhlash</h2>
+            <h3 class="heading-5">Bu sarlavha ham yuqoridagi kabi CSS xossaga ega bo'ladi</h3>
+        </div>
+        <!-- /Grouping rules -->
+    </body>
+</html>
+
+<!--
+    Pseudo classes | hover = ustiga kursor olib kelinganda ko'rsatilgan holat;
+    Pseudo classes | active = sichqoncha bosib turilgan paytdagi holatni anglatadi;
+
+    Pseudo classesga qo'shimcha manba: 
+    https://www.w3schools.com/css/css_pseudo_classes.asp
+-->
