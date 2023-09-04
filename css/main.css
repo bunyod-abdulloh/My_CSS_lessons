@@ -1,4 +1,4 @@
-
+/* Core styles */
 .body {
     font-style: sans-serif;
 }
@@ -41,10 +41,16 @@
     color: goldenrod;
 }
 
-/* Main header styles*/
-
 /*Main section */
 
+.main-section {
+    padding: 100px 30px;
+}
+
+.main-section > div {
+    width: 50%;
+}
+/*
 .main-section__welcome {
     font-size: 16px;
     font-weight: 400;
@@ -71,7 +77,14 @@
     font-weight: 300;
     margin-bottom: 20px;
 }
-/* Main section*/
+*/
+.main-section__action {
+
+}
+
+.main-section__image {
+    text-align: right;
+}
 
 /* Footer styles
 .footer {
