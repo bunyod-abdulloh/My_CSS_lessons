@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 
-/* Main header styles */
+/*Main header styles */
 
 .main-header__brand {
     display: inline-block;
@@ -41,6 +41,37 @@
     color: goldenrod;
 }
 
+/* Main header styles*/
+
+/*Main section */
+
+.main-section__welcome {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #797979;
+}
+
+.to-uppercase {
+    text-transform: uppercase;
+}
+
+.main-section__introduction {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #05364E;
+}
+
+.main-section__profession {
+    color: #05364E;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+/* Main section*/
 
 /* Footer styles
 .footer {
