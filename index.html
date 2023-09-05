@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Portfolio web site</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -16,7 +17,7 @@
                 </div>                
                 <nav class="main-navigation">
                     <ul class="main-navigation__items">
-                        <li class="main-navigation__item">
+                        <li class="main-navigation__item active">
                             <a href="#">Asosiy</a>
                         </li>
                         <li class="main-navigation__item">
@@ -44,28 +45,69 @@
         <!--/Header section-->
 
         <!--Main section-->
-        <!-- <div class="container"> -->
-        <section id="main-section" class="main-section">
-            <div class="main-section__info">
-                <h4 class="main-section__welcome to-uppercase">
-                    Hammaga salom!
-                </h4>
-                <h1 class="main-section__introduction to-uppercase">
-                    Mening ismim Abdulloh
-                </h1>
-                <h3 class="main-section__profession">
-                    Full Stack Python Developer
-                </h3>
-                <button type="button" class="main-section__action">
-                    Ishlarimni ko'rish
-                </button>
+        <div class="container">
+            <section id="main-section" class="main-section">
+                <div class="main-section__info">
+                    <h4 class="main-section__welcome to-uppercase">
+                        Hammaga salom!
+                    </h4>
+                    <h1 class="main-section__introduction to-uppercase">
+                        Mening ismim Abdulloh
+                    </h1>
+                    <h3 class="main-section__position to-uppercase">
+                        Full Stack Python Developer
+                    </h3>
+                    <div class="main-section__social-networks">
+                        <a href="http://t.me/muhib_dev">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/Bunyod-Abdulloh">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <button type="button" class="main-section__action to-uppercase">
+                        Ishlarimni ko'rish
+                    </button>
+                </div>
                 <div class="main-section__image">
-                    <img src="images/me.png" alt="My photo">
+                    <img src="images/me.png" alt="My image">
                 </div>
             </div>
-        </section>
-        <!-- </div> -->
+            </section>
+            <div class="clearfix"></div>
+        </div>
         <!--/Main section-->
+
+        <!-- Statistics -->
+        <div class="container">
+            <section id="statistics" class="statistics">
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        15k+
+                    </h3>
+                    <p class="statistics__title">
+                        Xursand mijozlar
+                    </p>
+                </div>
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        12k+
+                    </h3>
+                    <p class="statistics__title">
+                        Yordam
+                    </p>
+                </div>
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        9/10
+                    </h3>
+                    <p class="statistics__title">
+                        O'rtacha reyting
+                    </p>
+                </div>
+            </section>
+        </div>
+        <!--/Statistics -->
 
         <!--About me section-->
         <section id="about-me">
