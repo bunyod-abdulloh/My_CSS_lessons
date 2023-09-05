@@ -16,6 +16,44 @@
     clear: both;
 }
 
+.section-subtitle {
+    letter-spacing: 2px; /* fontlar orasidagi masofa */
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #797979;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 5px;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: purple;
+}
+
+.button {
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px 40px;
+    cursor: pointer; /* Sichqoncha shu belgi ustiga olib borilganida kursor shakli o'zgaradi */
+    border-radius: 5px;
+}
+
+.blur-line {
+    display: inline-block;
+    margin-left: 5px;
+    width: 80px;
+    height: 4px;
+    background: rgba(237,35,159,0.6);
+    filter: blur(4px);
+    border-radius: 4px;
+}
+
+
 /*Main header styles */
 
 .main-header__brand {
@@ -80,7 +118,7 @@
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 20px;
-    color: black;
+    color: purple;
 }
 
 .main-section__position {
@@ -149,36 +187,14 @@
     width: 90%;
 }
 
-.section-subtitle {
-    letter-spacing: 2px; /* fontlar orasidagi masofa */
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #797979;
-    text-transform: uppercase;
-}
-
-.section-title {
-    margin-top: 5px;
-    font-size: 42px;
-    font-weight: 700;
-    text-transform: capitalize;
-    color: purple;
-}
-
-.button {
-    border: none;
-    background-color: darkblue;
-    color: white;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 20px 40px;
-    cursor: pointer; /* Sichqoncha shu belgi ustiga olib borilganida kursor shakli o'zgaradi */
-    border-radius: 5px;
-}
-
 .about-me__description {
     font-size: 14px;
     font-weight: 300;
     color: #797979;
     line-height: 23px; /* qatorlar orasidagi intervalni o'zgartirish */
 }
+
+.about-me__action {
+    margin-top: 40px;
+}
+
