@@ -90,7 +90,7 @@
     margin-bottom: 20px;
 }
 
-.main-section__social-networks {
+.main-section__social-networks a {
     color: #8fa1aa;
     font-size: 20px;
     display: inline-block;
@@ -98,19 +98,15 @@
     cursor: pointer;
 }
 
-.main-section__action {
-    margin-top: 30px;
-    border: none;
-    background-color: darkblue;
-    color: white;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 20px 40px;
-    cursor: pointer;
-    border-radius: 5px;
+.main-section__social-networks a:hover i {
+    color: darkblue;
 }
 
-/* Statistics */
+.main-section__action {
+    margin-top: 30px;
+}
+
+/*Statistics */
 
 .statistics {
     padding-top: 100px;
@@ -136,4 +132,53 @@
     font-size: 16px;
     color: #797979;
     font-weight: 300;
+}
+
+/* About Me */
+
+.about-me {
+    padding: 100px 0;
+}
+
+.about-me > div {
+    width: 50%;
+    float: left;
+}
+
+.about-me__image img {
+    width: 90%;
+}
+
+.section-subtitle {
+    letter-spacing: 2px; /* fontlar orasidagi masofa */
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #797979;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 5px;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: purple;
+}
+
+.button {
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px 40px;
+    cursor: pointer; /* Sichqoncha shu belgi ustiga olib borilganida kursor shakli o'zgaradi */
+    border-radius: 5px;
+}
+
+.about-me__description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #797979;
+    line-height: 23px; /* qatorlar orasidagi intervalni o'zgartirish */
 }
