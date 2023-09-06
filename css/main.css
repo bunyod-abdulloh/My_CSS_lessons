@@ -211,6 +211,7 @@
     background-color: #F8FAFF;
     margin-right: 3%;
     text-align: center;
+    box-sizing: border-box; /* paddingni widthni ichida hisoblaydi */
 }
 
 .service-card__title {
@@ -233,6 +234,16 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #05364D;
-    text-decoration: none;
+    text-decoration: none; /* link ostidagi chiziqni olib tashkalaydi */
+    cursor: pointer;
 }
 
+.service-card:hover {
+    background-color: #5f30ff;
+}
+
+.service-card:hover .service-card__title,
+.service-card:hover .service-card__description,
+.service-card:hover .service-card__link {
+    color: white;
+}
