@@ -4,21 +4,61 @@
     <meta charset="UTF-8">
     <title>Positioning. Relative and Fixing</title>
     <style>
+        /*
         .relative-box {
+            position: relative; /* default holatdan surib beradi */
+        /*    top: 0px;
             background-color: blue;
             height: 100px;
-            color: whit;
+            color: white;
+        }
+        */
+        /*
+        .box {
+            background-color: red;
+            height: 50px;
+        }
+        */
+
+        body {
+            height: 10000px;
+        }
+
+        .fixed-box {
+            position: fixed; /* inline-block elementga aylanadi */
+            background-color: blue;
+            color: white;
+            height: 100px;
+            top: 50px;
+            right: 0;
+            width: 100%;
         }
 
         .box {
             background-color: red;
-            height: 50px;
+            height: 520px;
         }
     </style>
 </head>
 <body>
     <h1>Positioning. Relative and Fixing</h1>
+    <!-- Relatuve position 
     <div class="relative-box">Relative qiymatga ega box</div>
     <div class="box">Oddiy quti (default "static" qiymatga ega bo'ladi)</div>
+    -->
+
+    <!-- Fixing position -->
+    <div class="fixed-box">Fixed qiymatga ega box</div>
+    <div class="box">Oddiy quti</div>
 </body>
 </html>
+
+<!-- 
+    Agar .relative-boxga margin-top berilsa, .relative-box bilan .box birga suriladi.
+    Agar top/bottom/right/left ni o'zi berilsa, faqat .relative-boxni o'zi suriladi.
+
+    Viewport - user saytni ochganda unga ko'rinadigan qism!
+
+    Agar positionga Fixed qiymati berilsa, o'sha element scroll paytida (sahifa sichqoncha bilan tepaga pastga tushirilganida) ham joyida turaveradi.
+    
+-->
