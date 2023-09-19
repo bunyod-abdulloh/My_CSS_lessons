@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Z*index and Overflow</title>
+    <style>
+        .box-1 {
+            height: 200px;
+            background-color: red;
+            z-index: 3;
+        }
+
+        .box-2 {
+            margin-top: 5px;            
+            background-color: blue;
+            border: 1px solid red;
+            width: 200px;
+            height: 50px;
+            overflow-x: scroll; /* default - visible */
+            overflow-y: auto;
+        }
+    </style>
 </head>
 <body>
     <h1>Z*index and Overflow</h1>
-    <div></div>
+    <div class="box-1">
+        Box 1
+    </div>
+    <div class="box-2">
+        Z-index ustma ust tushib qolgan elementlarni ketma ketligini aniqlab beradi. Z-index ustma ust tushib qolgan elementlarni ketma ketligini aniqlab beradi.
+        Kattaroq "z-index"ga ega bo'lgan element kichikrog'iga qaranga oldinroqda joylashadi.
+        Z-index har doim joylashtirilgan (positioned) elementlarga amal qiladi!
+        Overflow - kontent elementi ichiga sig'may qolsa, o'zini qanday tutishini belgilab beradi.
+        Overflow/ -
+    </div>
 </body>
 </html>
+
+<!--
+    Z-index ustma ust tushib qolgan elementlarni ketma ketligini aniqlab beradi.
+    Kattaroq "z-index"ga ega bo'lgan element kichikrog'iga qaranga oldinroqda joylashadi.
+    Z-index har doim joylashtirilgan (positioned) elementlarga amal qiladi!
+
+    Overflow - kontent elementi ichiga sig'may qolsa, o'zini qanday tutishini belgilab beradi.
+    Overflow/ -
+-->
