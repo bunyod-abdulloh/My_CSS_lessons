@@ -309,6 +309,15 @@
     padding-top: 100px;
 }
 
+.portfolio-filters {
+    list-style: none; /* nuqtalarni yo'qotadi*/
+    padding-left: 0;
+}
+
+.portfolio-filters li {
+    display: inline-block;
+}
+
 .portfolio-items {
     position: relative;
     margin-top: 15px;
