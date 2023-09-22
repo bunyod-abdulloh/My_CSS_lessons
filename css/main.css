@@ -44,6 +44,7 @@
 }
 
 .blur-line {
+    position: relative;
     display: inline-block;
     margin-left: 5px;
     width: 80px;
@@ -51,6 +52,7 @@
     background: rgba(237,35,159,0.6);
     filter: blur(4px);
     border-radius: 4px;
+    top: -2px;
 }
 
 
@@ -312,10 +314,23 @@
 .portfolio-filters {
     list-style: none; /* nuqtalarni yo'qotadi*/
     padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .portfolio-filters li {
     display: inline-block;
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #05364d;
+    cursor: pointer;
+}
+
+.portfolio-filters li:hover,
+.portfolio-filters li.active {
+    color: darkblue;
 }
 
 .portfolio-items {
@@ -376,6 +391,10 @@
     visibility: visible;
     bottom: 24px;
     left: 60px;
+}
+
+.portfolio-item-1 {
+    padding-left: 0;
 }
 
 .portfolio-item-2 {
