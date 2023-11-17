@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Styling images</title>
-    
+    <style> 
+        .rounded-image {
+            border-radius: 10%;
+            width: 200px; 
+            height: 200px;
+        }
+        .circle-image {
+            border-radius: 50%;
+            width: 200px; 
+            height: 200px;
+            margin-left: 25px;
+        }
+        .thumbnail-image {
+            border: 1px solid #e00a0a;
+            border-radius: 5px;
+            padding: 5px;
+            width: 200px; 
+            height: 200px;
+        }
+        .opacity-image {
+            opacity: 0.5;
+            width: 200px;
+            height: 200px;
+        }
+        .opacity-image:hover {
+            opacity: 1;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
     <div class="box">Styling images</div>
+    <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar_Narzullayevning rasmi bor" class="rounded-image">
+    <h1>
+        Bu rounded-image
+    </h1>
+    <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar_Narzullayevning rasmi bor" class="circle-image">
+    <h1>
+        Bu circle-image
+    </h1>
+    <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar_Narzullayevning rasmi bor" class="thumbnail-image">
+    <h1>
+        Bu thumbnail-image
+    </h1>
+    <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar_Narzullayevning rasmi bor" class="opacity-image">
+    <h1>
+        Bu opacity image
+    </h1>
 </body>
 </html>
