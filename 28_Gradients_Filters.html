@@ -2,7 +2,65 @@
 <html>
     <head>
         <title>Gradients and Filters</title>
+        <style>
+            .gradient-box {
+                width: 600px;
+                height: 800px;
+                background-image: linear-gradient(to bottom, red, blue, green);
+            }
+            .radial-gradient-box {
+                margin-top: 5px;
+                width: 600px;
+                height: 800px;
+                background-image: radial-gradient(circle, red, blue, green);
+            }
+            .blur {                
+                filter: blur(10px);
+            }
+            .brightness {
+                filter: brightness(0.3);
+            }
+            .brightness {
+                filter: brightness(0.3);
+            }
+            .contrast {
+                filter: contrast(0.5);
+            }
+            .grayscale {
+                filter: grayscale(1);
+            }
+            .huerotate {
+                filter: huerotate(180deg);
+            }
+            .invert {
+                filter: invert(100%);
+            }
+            .opacity {
+                filter: opacity(50%);
+            }
+            .all-gradients img{
+                width: 200px;
+                height: 200px;
+            }
+        </style>
     </head>
     <h1>Gradient va Filtrlar</h1>
-    <div></div>
+    <!--
+    <div class="gradient-box"></div>
+    <h3>
+        Bu linear-gradient
+    </h3>
+    <div class="radial-gradient-box"></div>
+    <h3>
+        Bu radial-gradient
+    </h3> -->
+    <div class="all-gradients">
+        <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar ustozni rasmlari bor" class="blur">
+        <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar ustozni rasmlari bor" class="brightness">
+        <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar ustozni rasmlari bor" class="contrast">
+        <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar ustozni rasmlari bor" class="grayscale">
+        <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar ustozni rasmlari bor" class="huerotate">
+        <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar ustozni rasmlari bor" class="invert">
+        <img src="./images/Anvar_Narzullayev.jpg" alt="Bu yerda Anvar ustozni rasmlari bor" class="opacity">
+    </div>
 </html>
