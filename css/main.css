@@ -12,7 +12,7 @@
 .to-uppercase {
     text-transform: uppercase;   
 }
-
+909625047
 .clearfix {
     clear: both;
 }
@@ -105,7 +105,13 @@
 }
 
 /*Main section */
-
+.main-banner {
+    background: url(../images/main-banner.png) no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
+    box-sizing: border-box;
+}
 .main-section {
     padding: 100px 30px;
 }
