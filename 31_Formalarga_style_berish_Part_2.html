@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <title>Formalarga style berish part 2</title>
+    <!--
     <style>
         .container {
             padding: 30px;
         }
-
+    
         /*Radio button uchun container*/
         .form-control {
             display: block;
@@ -16,8 +17,12 @@
             cursor: pointer;
             font-size: 24px;
         }
-        .form-control:hover input ~ .custom-radio {
-            background-color: #ccc;
+
+        /*Brauzerda radio buttonni yashirish*/
+        .form-control input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
         }
 
         /*Maxsus radio buttonga style berish*/
@@ -30,11 +35,100 @@
             background-color: #ddd;
             border-radius: 50%;
         }
+
+        /*Sichqoncha olib borilganda orqa fon rangini o'zgartirish*/
+        .form-control:hover input ~ .custom-radio {
+            background-color: #ccc;
+        }
+
+        /*Radio button tanlanganda uning orqa fon rangini o'zgartirish*/
+        .form-control input:checked ~ .custom-radio {
+            background-color: orange;
+        }
+
+        /*Radio button tanlanganligini bildiruvchi belgi yaratish*/
+        .custom-radio:after {
+            top: 8px;
+            left: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+            content: "";
+            position: absolute;
+            display: none;
+        }
         
+        /*Tanlangan paytda ko'rsatish*/
+        .form-control input:checked ~ .custom-radio::after {
+            display: block;
+        }
+    </style>
+    -->
+    <style>
+        /*Checkbox uchun container*/
+        .container {
+            padding: 30px;
+        }
+
+        /*Checkbox uchun container*/
+        .form-control {
+            display: block;
+            position: relative;
+            padding-left: 36px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        /*Brauzerda checkboxni yashirish*/
+        .form-control input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /*Maxsus checkboxga style berish*/
+        .custom-checkbox {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 24px;
+            width: 24px;
+            background-color: #ddd;
+        }
+
+        /*Sichqoncha olib borilganda orqa fon rangini o'zgartirish*/
+        .form-control:hover input ~ .custom-checkbox {
+            background-color: green;
+        }
+
+         /*Checkbox tanlanganda uning orqa fon rangini o'zgartirish*/
+         .form-control input:checked ~ .custom-checkbox {
+            background-color: orange;
+        }
+
+        /*Checkbox tanlanganligini bildiruvchi belgi yaratish*/
+        .custom-checkbox:after {
+            top: 4px;
+            left: 8px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        /*Tanlangan paytda ko'rsatish*/
+        .form-control input:checked ~ .custom-checkbox:after {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!--
         <h1>Style berilgan radio tugmalar</h1>
         <label class="form-control">Radio 1
             <input type="radio" checked="checked" name="radio" value="radio-1">
@@ -48,7 +142,21 @@
             <input type="radio" name="radio" value="radio-3">
             <span class="custom-radio"></span>
         </label>
+        -->
         <!--name bir xil bo'lsa ikkalasidan birini tanlaydi-->
+        <h1>Style berilgan checkbox</h1>
+        <label class="form-control">Chexbox 1
+            <input type="checkbox" name="checkbox-1" value="checkbox-1" checked="checked">
+            <span class="custom-checkbox"></span>
+        </label>
+        <label class="form-control">Chexbox 2
+            <input type="checkbox" name="checkbox-2" value="checkbox-2">
+            <span class="custom-checkbox"></span>
+        </label>
+        <label class="form-control">Checkbox 3
+            <input type="checkbox" name="checkbox-3" value="checkbox-3">
+            <span class="custom-checkbox"></span>
+        </label>
     </div>
 </body>
 </html>
