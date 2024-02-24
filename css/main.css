@@ -12,7 +12,7 @@
 .to-uppercase {
     text-transform: uppercase;   
 }
-909625047
+
 .clearfix {
     clear: both;
 }
@@ -35,13 +35,19 @@
 
 .button {
     border: none;
-    background-color: darkblue;
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     color: white;
     font-weight: 500;
     font-size: 14px;
     padding: 20px 40px;
     cursor: pointer; /* Sichqoncha shu belgi ustiga olib borilganida kursor shakli o'zgaradi */
     border-radius: 5px;
+    background-size: 200% auto;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 0%, #1345e6 100%);
+    text-decoration: none;
 }
 
 .blur-line {
@@ -182,7 +188,9 @@
 .statistics__number {
     font-size: 27px;
     margin-bottom: 5px;
-    color: darkblue;
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .statistics__title {
@@ -420,4 +428,39 @@
 
 .portfolio-item-3 img {
     height: 530px;
+}
+
+/* Blog section styles*/
+.blog {
+    padding-top: 100px;
+}
+
+.blog-items {
+    margin-top: 50px;
+}
+
+.blog-item {
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.blog-item__image_img {
+    width: 100%;
+}
+
+.blog-item__info {
+    background-color: #F8FAFF;
+    padding: 10px;
+    color: #797979;
+}
+
+.blog-item__main-info span {
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.blog-item__main-info i {
+    margin-right: 5px;
 }
