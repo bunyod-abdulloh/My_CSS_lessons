@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formalarga style berish Part_1</title>
+    <style>
+        .container {
+            padding: 30px;
+        }
+        input [type=text], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #2e856f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #006a4e;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <form action="./server.php" method="GET">
+            <label for="firstname">Ism</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Ismingiz">
+            <br><br>
+            <label for="lastname">Sharif</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Sharifingiz">
+            <br><br>
+            <label for="country">Davlat</label>
+            <select name="country" id="country">
+                <option value="uzbekistan">O'zbekiston</option>
+                <option value="kazakhstan">Qozog'iston</option>
+                <option value="tadjikistan">Tojikiston</option>
+            </select>
+
+            <label for="message">Xabar</label>
+            <textarea name="message" id="message" placeholder="Xabaringiz"></textarea>
+
+            <button type="submit" class="button">Jo'natish</button>
+        </form>
+    </div>
 </body>
 </html>
