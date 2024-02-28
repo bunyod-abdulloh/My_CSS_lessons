@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 50vw; /* viewportning 50% */
+            padding: 5vw; /* viewportning 5% */
+            background-color: red;
+        }
+        .parent-box {
+            margin-top: 10px;
+            width: 50%;
+            background-color: red;
+            height: 200px;
+        }
+        .box-2 {
+            width: 100vw;
+            background-color: yellow;
+            height: 150px;
+        }
+        .box-3 {
+            margin-top: 10px;
+            height: 50vh;
+            width: 50vw;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .box-4 {
+            margin-top: 10px;
+            height: 100vh;
+            width: 100vw;
+            background-color: green;
+            border: 1px solid black;
+        }
+        .box-5 {
+            height: 100px;
+            width: 50vmin;
+            background-color: orange;
+            border: 1px solid black;
+        }
+        .box-6 {
+            margin-top: 10px;
+            height: 100px;
+            width: 50vmax;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Viewport birligi yordamida ko'rsatilgan qiymatlarga ega bo'lgan quti</div>
+    <div class="parent-box">
+        <div class="box-2">
+            Parent box ichidagi quti
+        </div>
+    </div>
+    <div class="box-3">Viewport height birligi yordamida ko'rsatilgan quti</div>
+    <div class="box-4">Sahifaning to'liq balandlik va kengligiga ega quti</div>
+    <h1>Quti ostidagi sarlavha</h1>
+    <div class="box-5">vmin o'lchov birligi uchun misol</div>
+    <div class="box-6">vmax o'lchov birligi uchun misol</div>
+</body>
+</html>
