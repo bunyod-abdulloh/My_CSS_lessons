@@ -7,11 +7,11 @@
     box-sizing: border-box;
 }
 .main-section {
-    padding: 100px 30px;
+    padding: 7.5rem 1.87rem; /* 1) 120/16=7.5rem 2) 30/16=1.87rem*/
 }
 
 .main-section > div {
-    width: 50%;
+    width: 50%; 
     float: left;
 }
 
@@ -20,33 +20,33 @@
 }
 
 .main-section__welcome {
-    font-size: 16px;
+    font-size: 1rem; /* 16/16=1rem */
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20/16=1.25rem */
     letter-spacing: 2px;
     color: #797979;
 }
 
 .main-section__introduction {
-    margin-top: 20px;
-    font-size: 60px;
+    margin-top: 1.25rem; /* 20/16=1.25rem */
+    font-size: 3.75rem; /* 60/16=3.75rem */
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20/16=1.25rem */
     color: purple;
 }
 
 .main-section__position {
     color: black;
-    font-size: 24px;
+    font-size: 1.5rem; /* 24/16=1.5rem */
     font-weight: 300;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20/16=1.25rem */
 }
 
 .main-section__social-networks a {
     color: #8fa1aa;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20/16=1.25rem */
     display: inline-block;
-    margin-right: 16px;
+    margin-right: 1rem; /* 16/16=1rem */
     cursor: pointer;
 }
 
@@ -55,13 +55,13 @@
 }
 
 .main-section__action {
-    margin-top: 30px;
+    margin-top: 1.87rem; /* 30/16=1.87rem*/
 }
 
 /*Statistics */
 
 .statistics {
-    padding-top: 100px;
+    padding-top: 6.25rem; /* 100/16=6.25rem */
 }
 
 .statistics__item {
@@ -69,20 +69,20 @@
     width: 150px;
     background-color: #F8FAFF;
     text-align: center;
-    padding: 5px 10px;
-    margin-right: 20px;
+    padding: 0.32rem 0.625rem; /* 1) 5/16=0.32rem 2) 10/16=0.625rem */
+    margin-right: 1.25rem; /* 20/16=1.25rem */
 }
 
 .statistics__number {
-    font-size: 27px;
-    margin-bottom: 5px;
+    font-size: 1.69rem; /* 27/16=1.69rem */
+    margin-bottom: 0.32rem; /* 5/16=0.32rem */
     background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .statistics__title {
-    font-size: 16px;
+    font-size: 1rem; 
     color: #797979;
     font-weight: 300;
 }
@@ -90,7 +90,7 @@
 /* About Me */
 
 .about-me {
-    padding: 100px 0;
+    padding: 6.25rem 0; /* 100/16=6.25rem */
 }
 
 .about-me > div {
@@ -103,50 +103,48 @@
 }
 
 .about-me__description {
-    font-size: 14px;
+    font-size: 0.87rem; /* 14/16=0.87rem */
     font-weight: 300;
     color: #797979;
-    line-height: 23px; /* qatorlar orasidagi intervalni o'zgartirish */
+    line-height: 1.69rem; /* qatorlar orasidagi intervalni o'zgartirish */
 }
 
 .about-me__action {
-    margin-top: 40px;
+    margin-top: 2.5rem; /* 40/16=2.5rem */
 }
 
 /* Services section styles */
 
 .services {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .service-card {
     display: inline-block;
     width: 30%;
-    padding: 15px 30px;
+    padding: 3.75rem 1.87rem; /* 1) 60/16=3.75rem 2) 30/16=1.87rem */
     background-color: #F8FAFF;
-    margin-right: 3%;
-    margin-bottom: 40px;
+    margin-right: 3%; 
     text-align: center;
     box-sizing: border-box; /* paddingni widthni ichida hisoblaydi */
 }
 
 .service-card__title {
     color: #05364D;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20/16=1.25rem */
     font-weight: 500;
-    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 .service-card__description {
-    font-size: 14px;
-    line-height: 27px;
+    font-size: 0.8rem;
+    line-height: 1.68rem; 
     font-weight: 300;
     color: #797979
 }
 
 .service-card__link {
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: 500;
     text-transform: uppercase;
     color: #05364D;
@@ -168,7 +166,7 @@
 /* My clients section styles */
 
 .clients {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .client-item > div {
@@ -178,8 +176,8 @@
 }
 
 .client-item__info {
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 3.12rem;
+    padding-left: 3.12rem;
 }
 
 .client-item__image img {
@@ -189,20 +187,20 @@
 }
 
 .client-item__fullname {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: purple;
 }
 
 .client-item__position {
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 300;
     color: #5d6d75;
 }
 
 .client-item__review {
     color: #888;
-    font-size: 14px;
-    line-height: 27px; /* qatorlar orasidagi masofa */
+    font-size: 0.87rem;
+    line-height: 1.68rem; /* qatorlar orasidagi masofa */
     font-weight: 300;
 }
 
@@ -212,20 +210,20 @@
 
 /* Portfolio */
 .portfolio {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .portfolio-filters {
     list-style: none; /* nuqtalarni yo'qotadi*/
     padding-left: 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3.12rem;
+    margin-bottom: 3.12rem;
 }
 
 .portfolio-filters li {
     display: inline-block;
-    margin-right: 40px;
-    font-size: 13px;
+    margin-right: 2.5rem;
+    font-size: 0.8rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #05364d;
@@ -239,7 +237,7 @@
 
 .portfolio-items {
     position: relative;
-    margin-top: 15px;
+    margin-top: 0.9rem;
 }
 
 .portfolio-item {
@@ -247,7 +245,7 @@
     display: inline-block;
     cursor: pointer;
     width: 50%;
-    padding: 10px;
+    padding: 1.6rem;
     box-sizing: border-box;  
 }
 
@@ -272,8 +270,8 @@
 
 .portfolio-item__info {
     position: absolute;
-    bottom: 44px;
-    left: 80px;
+    bottom: 2.75rem;
+    left: 5rem;
     color: white;
     text-decoration: none;
     visibility: hidden;
@@ -287,14 +285,14 @@
 
 .portfolio-item:hover .portfolio-item__overlay {
     visibility: visible;
-    top: 20px;
-    left: 20px;
+    top: 1.25rem;
+    left: 1.25rem;
 }
 
 .portfolio-item:hover .portfolio-item__info {
     visibility: visible;
-    bottom: 24px;
-    left: 60px;
+    bottom: 1.5rem;
+    left: 3.75rem;
 }
 
 .portfolio-item-1 {
@@ -309,7 +307,7 @@
 
 .portfolio-item-3 {
     position: absolute;
-    top: 322px;
+    top: 20.12rem;
     right: 0;
 }
 
