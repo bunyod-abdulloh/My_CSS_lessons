@@ -144,7 +144,7 @@
 }
 
 .service-card__link {
-    font-size: 0.8rem;
+    font-size: 0.81rem;
     font-weight: 500;
     text-transform: uppercase;
     color: #05364D;
@@ -188,7 +188,7 @@
 
 .client-item__fullname {
     font-size: 1.25rem;
-    color: purple;
+    margin-bottom: 0.25rem;
 }
 
 .client-item__position {
@@ -217,13 +217,12 @@
     list-style: none; /* nuqtalarni yo'qotadi*/
     padding-left: 0;
     margin-top: 3.12rem;
-    margin-bottom: 3.12rem;
 }
 
 .portfolio-filters li {
     display: inline-block;
     margin-right: 2.5rem;
-    font-size: 0.8rem;
+    font-size: 0.81rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #05364d;
@@ -237,7 +236,7 @@
 
 .portfolio-items {
     position: relative;
-    margin-top: 0.9rem;
+    margin-top: 3.125rem;
 }
 
 .portfolio-item {
@@ -245,7 +244,7 @@
     display: inline-block;
     cursor: pointer;
     width: 50%;
-    padding: 1.6rem;
+    padding: 0.625rem;
     box-sizing: border-box;  
 }
 
@@ -270,8 +269,8 @@
 
 .portfolio-item__info {
     position: absolute;
-    bottom: 2.75rem;
-    left: 5rem;
+    bottom: 44px;
+    left: 80px;
     color: white;
     text-decoration: none;
     visibility: hidden;
@@ -307,7 +306,7 @@
 
 .portfolio-item-3 {
     position: absolute;
-    top: 20.12rem;
+    top: 322px;
     right: 0;
 }
 
@@ -318,11 +317,11 @@
 
 /* Blog section styles*/
 .blog {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .blog-items {
-    margin-top: 50px;
+    margin-top: 3.12rem;
 }
 
 .blog-item {
@@ -346,36 +345,36 @@
 
 .blog-item__info {
     background-color: #F8FAFF;
-    padding: 30px;
+    padding: 1.87rem;
     color: #797979;
 }
 
 .blog-item__main-info span {
-    font-size: 14px;
-    margin-right: 30px;
+    font-size: 0.87rem;
+    margin-right: 1.87rem;
     font-weight: lighter;
 }
 
 .blog-item__info i {
-    margin-right: 5px;
+    margin-right: 0.31rem;
 }
 
 .blog-item__title {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.94rem;
     color: #05364d;
     font-weight: 700;
 }
 
 .blog-item__description {
-    line-height: 27px;
+    line-height: 1.68rem;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 0.94rem;
 }
 
 .blog-item__learn-more {
-    font-size: 13px;
+    font-size: 0.81rem;
     font-weight: 500;
     text-transform: uppercase;
     color: #05364d;
@@ -388,10 +387,10 @@
 
 /* Partners section styles */
 .partners {
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
 .partner {
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 1.87rem;
 }
