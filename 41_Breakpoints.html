@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoints</title>
+    <style>
+        h1 {
+            font-size: 0.8rem;
+            background-color: blueviolet;
+        }
+        /*Kichik devicelar (mobile phones(landscape), 576 pxdan yuqorisi)*/
+        @media only screen and (min-width: 576px) {
+            h1 {
+                font-size: 1rem;
+                background-color: orange;
+            }
+        }
+
+        /*O'rta devicelar (planshetlar, 768 pxdan yuqorisi)*/
+        @media only screen and (min-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+                background-color: red;
+            }
+        }
+
+        /*Katta devicelar (noutbuklar, 992 pxdan yuqorisi)*/
+        @media only screen and (min-width: 992px) {
+            h1 {
+                font-size: 2rem;
+                background-color: green;
+            }
+        }
+
+        /*Kattaroq devicelar (katta o'lchamga ega monitorlar, 1200 pxdan yuqorisi)*/
+        @media only screen and (min-width: 1200px) {
+            h1 {
+                font-size: 3rem;
+                background-color: grey;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Ekran o'lchoviga qarab o'z o'lchamini o'zgartiruvchi sarlahva
+    </h1>
+</body>
+</html>
