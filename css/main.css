@@ -395,26 +395,16 @@
     padding: 0 1.87rem;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
     /* Main section */
-    .main-banner {
-        background: none;
-        min-height: auto;
-    }
     .main-section img {
         display: none;
     }
-    .main-section__action {
-        display: none;
-    }
-    .main-section > div {
-        width: 100%;
-    }
 
     /* Statistics section */
-    .statistics__item {
-        width: 100%;
-        margin-bottom: 20px;
+    .statistics {
+        padding-top: 1rem;
+        text-align: center;
     }
 
     /* About me section */
@@ -433,8 +423,7 @@
         padding: 1.5rem 0;
     }
     .service-card {
-        width: 100%;
-        margin-right: 0;
+        width: 45%;
         margin-bottom: 20px;
     }
 
@@ -445,6 +434,42 @@
     .client-item > div {
         width: 100%;
         float: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Main section */
+    .main-banner {
+        background: none;
+        min-height: auto;
+    }
+    .main-section > div {
+        width: 100%;
+    }
+    
+    .main-section__action {
+        display: none;
+    }
+    .main-section__introduction {
+        font-size: 3rem;
+    }
+
+    /* Statistics section */
+    .statistics__item {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    /* Services section */
+    .services {
+        padding: 1.5rem 0;
+    }
+    .service-card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     /* Portfolio section */
@@ -467,5 +492,16 @@
         width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    /* Partners section */
+    .partners {
+        padding: 1.5rem 0;
+    }
+    .partner {
+        display: block;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
