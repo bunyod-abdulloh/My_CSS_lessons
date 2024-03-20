@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media queries</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 400px;
+            background-color: red;
+        }
+        /* media so'rovlar asosiy styledan keyin yozilishi lozim!!! */
+        /* 600pxdan boshlab */
+        /*@media only screen and (min-width: 600px) {
+            .box {
+                background-color: green;
+            }
+        }*/
+        /* 900pxdan boshlab */
+        /*@media only screen and (min-width: 900px) {
+            .box {
+                background-color: blue;
+            }
+        }*/
+        /*Bu yerda medialarni ketma ketligiga e'tibor berish muhim hisoblanadi!!!*/
+        /* 900pxgacha */
+        @media only screen and (max-width: 900px) {
+            .box {
+                background-color: orange;
+            }
+        }
+        /* 600pxgacha*/
+        @media only screen and (max-width: 600px) {
+            .box {
+                background-color: green;
+            }
+        }
+        
+    </style>
 </head>
 <body>
-    <div>
+    <div class="box">
         Kichik ekranda qizil, katta ekranda yashil qiymatni oladigan quti
     </div>
 </body>
