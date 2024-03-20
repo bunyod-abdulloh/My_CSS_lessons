@@ -394,3 +394,78 @@
     display: inline-block;
     padding: 0 1.87rem;
 }
+
+@media only screen and (max-width: 767px) {
+    /* Main section */
+    .main-banner {
+        background: none;
+        min-height: auto;
+    }
+    .main-section img {
+        display: none;
+    }
+    .main-section__action {
+        display: none;
+    }
+    .main-section > div {
+        width: 100%;
+    }
+
+    /* Statistics section */
+    .statistics__item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* About me section */
+    .about-me {
+        padding: 1.5rem 0;
+    }
+    .about-me > div {
+        width: 100%;
+    }
+    .about-me__image img {
+        display: none;
+    }
+
+    /* Services section */
+    .services {
+        padding: 1.5rem 0;
+    }
+    .service-card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Clients section */
+    .clients {
+        padding: 1.5rem 0;
+    }
+    .client-item > div {
+        width: 100%;
+        float: none;
+    }
+
+    /* Portfolio section */
+    .portfolio {
+        padding: 1.5rem 0;
+    }
+    .portfolio-item {
+        width: 100%;
+    }
+    .portfolio-item-2,
+    .portfolio-item-3  {
+        position: static;
+    }
+
+    /* Blog section */
+    .blog {
+        padding: 1.5rem 0;
+    }
+    .blog-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
