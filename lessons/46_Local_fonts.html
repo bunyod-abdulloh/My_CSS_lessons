@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local fonts</title>
     <style>
+        
         @font-face {
-            font-family: 'Lato';
-            src: url('/fonts/Lato/Lato-Italic.ttf');
+            font-family: 'Lato', sans-serif;
+            src: url('/fonts/Lato-Formats/Lato-BlackItalic.eot');
+            src: url('/fonts/Lato-Formats/Lato-BlackItalic.eot') format('embedded-opentype'),
+                url('/fonts/Lato-Formats/Lato-BlackItalic.woff2') format('woff2'),
+                url('/fonts/Lato-Formats/Lato-BlackItalic.woff') format('woff'),
+                url('/fonts/Lato-Formats/Lato-BlackItalic.ttf') format('truetype');
+            font-weight: 700;
+            font-style: italic;
+            font-display: swap;
         }
 
-        p {
-            font-family: 'Lato';
+        @font-face {
+            font-family: 'Lato', sans-serif;
+            src: url('/fonts/Lato-Formats/Lato-Bold.eot');
+            src: url('/fonts/Lato-Formats/Lato-Bold.eot') format('embedded-opentype'),
+                url('/fonts/Lato-Formats/Lato-Bold.woff2') format('woff2'),
+                url('/fonts/Lato-Formats/Lato-Bold.woff') format('woff'),
+                url('/fonts/Lato-Formats/Lato-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
         }
+        
+        p {
+            font-family: 'Lato', sans-serif;
+        }
+        
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        
     </style>
 </head>
 <body>
@@ -26,3 +53,7 @@
     </p>
 </body>
 </html>
+
+<!--
+    Fontlarni https://fonts.google.com/ saytidan yuklab olish mumkin!
+-->
