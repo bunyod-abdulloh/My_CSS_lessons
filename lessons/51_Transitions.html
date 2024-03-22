@@ -12,27 +12,99 @@
             background-color: aqua;
             transition: width 2s, background-color 4s, height 2s;
         }
-        */
         .box {
             width: 200px;
             height: 200px;
             background-color: aqua;
             transition: all 2s;
         }
+        */
         /* Hamma CSS xossalarga transition effektini qo'llab bo'lmaydi
         https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
         Yuqoridagi havola orqali ularni ko'rib olish mumkin! */
-        
+        /*
         .box:hover {
             width: 400px;
             background-color: orange;
             height: 400px;
         }
+        */
+        /*
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transition: width 2s;
+            margin-bottom: 20px;
+        }
+
+        .box:hover {
+            width: 400px;
+        }
+
+        .ease {
+            transition-timing-function: ease;
+        }
+
+        .linear {
+            transition-timing-function: linear;
+        }
+
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+
+        .cubic-bezier {
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.19, 1.46);
+        }
+        */
+        /* Transition delay */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transition: width 2s;
+            transition-delay: 2s;
+        }
+        .box:hover {
+            width: 400px;
+            height: 400px;
+        }
     </style>
 </head>
 <body>
+    <!--
     <div class="box">
         Sichqoncha olib borilganda o'z kengligini ravon o'zgartiruvchi quti
+    </div>
+    -->
+    <!--
+    <div class="box ease">
+        Ease - effektimiz sekin boshlanib, keyin tezlashib va yana sekinlashib tugaydi
+    </div>
+    <div class="box linear">
+        Linear - effektimiz ko'rsatilgan vaqt davomida bir xil tezlikka ega bo'ladi
+    </div>
+    <div class="box ease-in">
+        Ease in - effektimiz sekin boshlanadi
+    </div>
+    <div class="box ease-in-out">
+        Ease in out - sekin boshlanib sekin tugaydi
+    </div>
+    <div class="box cubic-bezier">
+        Cubic bezier - cubic-bezier funksiyasi orqali ko'rsatilgan egri chiziq effekti
+    </div>
+    -->
+    <div class="box">
+        Sichqoncha olib borilganda 2 soniyadan so'ng effekt ishga tushadi!
     </div>
 </body>
 </html>
