@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animations 2 qism</title>
     <style>
-        /* Animation-direction
-        @keyframes box-mover {
+        /* Animation-direction qolgan qiymatlarini ham ishlatib ko'rish kerak!!!*/
+        /*
+        @keyframes box-direction {
             0% {
                 left: 0;
                 background-color: red;
@@ -18,18 +19,20 @@
                 width: 400px;
             }
         }
-        .box {
-        width: 200px;
-        height: 200px;
-        position: relative;
-        background-color: red;
-        color: white;
-        animation-name: box-mover;
-        animation-duration: 4s;
-        animation-direction: reverse;
+        .box-direction {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: red;
+            color: white;
+            animation-name: box-direction;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
         }
         */
-        /* Animation-timing-function
+        /* Animation-timing-function qolgan qiymatlarini ham ko'rish lozim!!! */
+        /*
         @keyframes box-mover {
             0% {
                 left: 0;
@@ -50,10 +53,11 @@
             color: white;
             animation-name: box-mover;
             animation-duration: 4s;
-            animation-timing-function: ease-in-out;
+            animation-timing-function: ease-out;
         }
         */
-        /* Fill mode
+        /* Fill mode */
+        /*
         @keyframes box-mover {
             0% {
                 left: 0;
@@ -74,9 +78,10 @@
             color: white;
             animation-name: box-mover;
             animation-duration: 4s;
-            animation-fill-mode: both;
+            animation-fill-mode: forwards;
         }
         */
+        /* Animation play state */
         /*
         @keyframes box-mover {
             0% {
@@ -104,7 +109,7 @@
             animation-play-state: paused;
         }
         */
-        /* Umumiy
+        /* Umumiy */
         @keyframes box-mover {
             0% {
                 left: 0;
@@ -112,9 +117,9 @@
                 width: 200px;
             }
             100% {
-            left: 500px;
-            background-color: green;
-            width: 400px;
+                left: 500px;
+                background-color: green;
+                width: 400px;
             }
         }
         .box {
@@ -123,34 +128,30 @@
             position: relative;
             background-color: red;
             color: white;
-            /* animation-name: box-mover;
+            /*animation-name: box-mover;
             animation-duration: 4s;
             animation-timing-function: linear;
             animation-delay: 2s;
             animation-iteration-count: 2;
             animation-direction: alternate;
             animation-fill-mode: backwards;
-            animation-play-state: running;
+            animation-play-state: running;*/
             animation: box-mover 4s linear 2s 2 backwards alternate running;
         }
-        */
+        
     </style>
 </head>
 <body>
-    <!--
+    
+    <!-- <div class="box-direction">Animatsiyaga ega bo'lgan quti</div> -->
+    
+    <!-- <div class="box">Animatsiyaga ega bo'lgan quti</div> -->
+    
+    <!-- <div class="box">Animatsiyaga ega bo'lgan quti</div> -->
+    
+    <!-- <div class="box">Animatsiyaga ega bo'lgan quti</div> -->
+    
     <div class="box">Animatsiyaga ega bo'lgan quti</div>
-    -->
-    <!--
-    <div class="box">Animatsiyaga ega bo'lgan quti</div>
-    -->
-    <!--
-    <div class="box">Animatsiyaga ega bo'lgan quti</div>
-    -->
-    <!--
-    <div class="box">Animatsiyaga ega bo'lgan quti</div>
-    -->
-    <!--
-    <div class="box">Animatsiyaga ega bo'lgan quti</div>
-    -->
+    
 </body>
 </html>
