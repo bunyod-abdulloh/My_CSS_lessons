@@ -150,6 +150,15 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    font-family: inherit;
+    transition: all 0.3s ease-in-out;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -194,6 +203,7 @@ body {
 .button:hover {
     background: linear-gradient(to right, #1345e6 0%, #ed239f 0%, #1345e6 100%);
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .blur-line {

@@ -126,7 +126,8 @@
     background-color: #F8FAFF;
     margin-right: 3%; 
     text-align: center;
-    box-sizing: border-box; /* paddingni widthni ichida hisoblaydi */
+    box-sizing: border-box;
+    transition: all 0.4s ease 0s;
 }
 
 .service-card__title {
@@ -265,6 +266,7 @@
     background-color: olivedrab;
     visibility: hidden;
     z-index: 1;
+    transition: all 0.4s ease 0s;
 }
 
 .portfolio-item__info {
@@ -422,8 +424,14 @@
         padding: 1.5rem 0;
     }
     .service-card {
-        width: 45%;
-        margin-bottom: 20px;
+        display: inline-block;
+        width: 30%;
+        padding: 3.75rem 1.87rem;
+        background-color: #F8FAFF;
+        margin-right: 3%;
+        text-align: center;
+        box-sizing: border-box;
+        transition: all 0.4s ease 0s;
     }
 
     /* Clients section */
