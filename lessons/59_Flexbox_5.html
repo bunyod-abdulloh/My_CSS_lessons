@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexbox 5 </title>
     <style>
         body {
-        font-family: sans-serif;
+            font-family: sans-serif;
         }
-        /* Align items 
+        /* Flex basis 
+        .flex-container {
+            display: flex;
+            padding: 20px;
+            background-color: #025955;
+            border-radius: 10px;
+        }
+        .flex-item {
+            padding: 60px 15px;
+            background-color: #FDE8CD;
+            font-weight: bold;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .flex-basis-300 {
+            flex-basis: 300px;
+        }
+        */
+        /* Flex - flex-grow + flex-shrink + flex-basis = barcha xossalarini birlashtiruvchi xossa */
         .flex-container {
             display: flex;
             height: 400px;
             padding: 20px;
             background-color: #025955;
             border-radius: 10px;
-            align-items: normal;
+            align-items: flex-start;
         }
+
         .flex-item {
             padding: 60px 15px;
             background-color: #FDE8CD;
@@ -24,50 +43,30 @@
             margin: 10px;
             border-radius: 10px;
         }
-        */
-        /* Align content */
-        .flex-container {
-            display: flex;
-            height: 700px;
-            padding: 20px;
-            background-color: #025955;
-            border-radius: 10px;
-            flex-wrap: wrap;
-            align-content: center;
+
+        .flex-item-2 {
+            align-self: flex-end;
         }
-        .flex-item {
-            padding: 60px 15px;
-            background-color: #FDE8CD;
-            font-weight: bold;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        */
-    </style>
+        
+        </style>
 </head>
 <body>
     <h1>
-        57. Flexbox: align-items va align-content
+        59. Flexbox: flex-basis, flex va align-self
     </h1>
     <!--
     <div class="flex-container">
         <div class="flex-item">Flex item 1</div>
-        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item flex-basis-300">Flex item 2</div>
         <div class="flex-item">Flex item 3</div>
     </div>
     -->
     <!-- -->
     <div class="flex-container">
         <div class="flex-item">Flex item 1</div>
-        <div class="flex-item">Flex item 2</div>
+        <div class="flex-item flex-item-2">Flex item 2</div>
         <div class="flex-item">Flex item 3</div>
-        <div class="flex-item">Flex item 4</div>
-        <div class="flex-item">Flex item 5</div>
-        <div class="flex-item">Flex item 6</div>
-        <div class="flex-item">Flex item 7</div>
-        <div class="flex-item">Flex item 8</div>
-        <div class="flex-item">Flex item 9</div>
     </div>
-    -->
+    -->        
 </body>
 </html>
