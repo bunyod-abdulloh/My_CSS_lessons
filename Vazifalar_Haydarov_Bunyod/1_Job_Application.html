@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="supernova">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./1_Job_Apllication.css">
+    <title>Form Job Apllication</title>
+</head>
+    <body>  
+        <form action="./server.php" class="jotform-form">
+            <ul class="page-section-form">
+                <h1 class="form-header">
+                    Job Application
+                </h1>
+                <div class="form-subHeader">
+                    Please complete the form below to apply for a position with us.
+                </div>
+                <div class="bottom-line-one"></div>
+                <div class="form-title">
+                    Full Name 
+                    <span class="yulduzcha">*</span>
+                </div>
+                <div class="form-sublabel-container">
+                    <div class="form-flex">
+                        <input type="text" id="first-name" name="first-name">
+                        <div class="form-sublabel">
+                            <label for="first-name">
+                                First Name
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <input type="text" id="middle-name" name="middle-name">
+                        <div class="form-sublabel">
+                            <label class="form-sublabel" for="middle-name">
+                                Middle Name
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <input type="text" id="last-name" name="last-name">
+                        <div class="form-sublabel">
+                            <label class="form-sublabel" for="last-name">
+                                Last Name
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+                <div class="form-title">
+                    Body Size 
+                    <span class="yulduzcha">*</span>
+                </div>
+                <div class="form-sublabel-container">
+                    <div class="form-flex">
+                        <input type="text" id="height" name="height" placeholder="sm">
+                        <div class="form-sublabel">
+                            <label for="height">
+                                Height
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <input type="text" id="weight" name="weight" placeholder="kg">
+                        <div class="form-sublabel">
+                            <label class="form-sublabel" for="weight">
+                                Weight
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-title">
+                    Birth Date 
+                </div>
+                <div class="form-sublabel-container">
+                    <div class="form-flex">
+                        <select name="month" id="month">
+                            <option value="birinchi">Birinchi</option>
+                            <option value="ikkinchi">Ikkinchi</option>
+                        </select>
+                        <div class="form-sublabel">
+                            <label for="month">
+                                Month
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <select name="month" id="day">
+                            <option value="birinchi">1</option>
+                            <option value="ikkinchi">2</option>
+                        </select>
+                        <div class="form-sublabel">
+                            <label class="form-sublabel" for="day">
+                                Day
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <select name="month" id="month">
+                            <option value="birinchi-yil">2024</option>
+                            <option value="ikkinchi-yil">2023</option>
+                        </select>
+                        <div class="form-sublabel">
+                            <label class="form-sublabel" for="year">
+                                Year
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+                <div class="form-title">
+                    Family Status 
+                </div>
+                </label>
+                <label class="form-control">Divorced
+                    <input type="radio" checked="checked" name="radio" value="divorced">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="form-control">Married
+                    <input type="radio" checked="checked" name="radio" value="married">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="form-control">Single
+                    <input type="radio" checked="checked" name="radio" value="single">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="form-control">Other
+                    <input type="radio" name="radio" value="other" checked="checked">
+                    <span class="custom-radio other-radio"></span>
+                </label>
+                <div class="form-title">
+                    Current Address 
+                </div>
+                <div class="form-sublabel-container">
+                    <div class="form-flex">
+                        <input type="text" id="height" name="height" placeholder="sm">
+                        <div class="form-sublabel">
+                            <label for="height">
+                                Height
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <input type="text" id="weight" name="weight" placeholder="kg">
+                        <div class="form-sublabel">
+                            <label class="form-sublabel" for="weight">
+                                Weight
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </form>
+    </body>
+</html>

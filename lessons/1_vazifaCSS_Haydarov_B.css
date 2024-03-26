@@ -1,131 +1,116 @@
-.form-all {
-    font-family: Inter, sans-serif;
-  }
-  .form-all .qq-upload-button,
-  .form-all .form-submit-button,
-  .form-all .form-submit-reset,
-  .form-all .form-submit-print {
-    font-family: Inter, sans-serif;
-  }
-  .form-all .form-pagebreak-back-container,
-  .form-all .form-pagebreak-next-container {
-    font-family: Inter, sans-serif;
-  }
-  .form-header-group {
-    font-family: Inter, sans-serif;
-  }
-  .form-label {
-    font-family: Inter, sans-serif;
-  }
-
-  
-
-  .form-line {
-    margin-top: 12px 36px 12px 36px px;
-    margin-bottom: 12px 36px 12px 36px px;
-  }
-
-  .form-all {
-    max-width: 752px;
-    width: 100%;
-  }
-
-  .form-label.form-label-left,
-  .form-label.form-label-right,
-  .form-label.form-label-left.form-label-auto,
-  .form-label.form-label-right.form-label-auto {
-    width: 230px;
-  }
-
-  .form-all {
-    font-size: 16px
-  }
-  .form-all .qq-upload-button,
-  .form-all .qq-upload-button,
-  .form-all .form-submit-button,
-  .form-all .form-submit-reset,
-  .form-all .form-submit-print {
-    font-size: 16px
-  }
-  .form-all .form-pagebreak-back-container,
-  .form-all .form-pagebreak-next-container {
-    font-size: 16px
-  }
-
-  .supernova .form-all, .form-all {
-    background-color: #fff;
-  }
-
-  .form-all {
-    color: #2C3345;
-  }
-  .form-header-group .form-header {
-    color: #2C3345;
-  }
-  .form-header-group .form-subHeader {
-    color: #2C3345;
-  }
-  .form-label-top,
-  .form-label-left,
-  .form-label-right,
-  .form-html,
-  .form-checkbox-item label,
-  .form-radio-item label,
-  span.FITB .qb-checkbox-label,
-  span.FITB .qb-radiobox-label,
-  span.FITB .form-radio label,
-  span.FITB .form-checkbox label,
-  [data-blotid][data-type=checkbox] [data-labelid],
-  [data-blotid][data-type=radiobox] [data-labelid],
-  span.FITB-inptCont[data-type=checkbox] label,
-  span.FITB-inptCont[data-type=radiobox] label {
-    color: #2C3345;
-  }
-  .form-sub-label {
-    color: #464d5f;
-  }
-
-  .supernova {
-    background-color: #e0f0fd;
-  }
-  .supernova body {
-    background: transparent;
-  }
-
-  .form-textbox,
-  .form-textarea,
-  .form-dropdown,
-  .form-radio-other-input,
-  .form-checkbox-other-input,
-  .form-captcha input,
-  .form-spinner input {
-    background-color: #fff;
-  }
-
-  .supernova {
-    background-image: none;
-  }
-  #stage {
-    background-image: none;
-  }
-
-  .form-all {
-    background-image: none;
-  }
-
-.ie-8 .form-all:before { display: none; }
-.ie-8 {
-  margin-top: auto;
-  margin-top: initial;
+li[data-type=control_head] {
+    list-style: none;
 }
 
-/*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
-.form-label.form-label-auto {
-      
+div.header-large {
+    margin: 0 -38px;
+    padding: 2.5em 52px;
+}
+
+.header-large {
+    border-color: #d7d8e1;
+}
+
+.form-header-group {
+    border-bottom: 1px solid;
+}
+
+div {
+    display: block;
+}
+
+.form-label .form-label-auto {
     display: block;
     float: none;
     text-align: left;
     width: 100%;
-  
-    }
-  /* Injected CSS Code */
+}
+
+.form-label-top {
+    width: 100%;
+    margin-left: 2px;
+    margin-bottom: 14px;
+}
+
+.form-label {
+    display: inline-block;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+label {
+    cursor: default;
+}
+
+/*
+div.header-large {
+    margin: 0 -38px;
+    padding: 2.5em 52px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.header-large {
+    border-color: #d7d8e1;
+}
+
+.form-header-group {
+    border-bottom: 1px solid;
+    padding: 14px;
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+}
+
+.form-container {
+    padding: 14px;
+}
+
+.form-fullname {
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
+}
+
+.yulduzcha {
+    color: red;
+}
+
+.form-textbox {
+    font-size: 1em;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    display: inline;
+    font-family: inherit;
+    padding: 10px 10px;
+    margin-right: 5px;
+}
+
+.form-textbox:hover {
+    border-width: 2px;
+    border-color: #2e69ff;
+    box-shadow: 0 0 0 3px rgb(46, 105, 255, .25);
+}
+/*
+.form-sub-label {
+    color: #464d5f;
+    font-size: .75em;
+    margin-top: 11px;
+    margin-left: 2px;
+    word-break: break-word;
+}
+*/
+.form-sub-label {
+    padding: 10px 70px;
+    display: inline;
+    color: #464d5f;
+    font-size: .75em;
+    margin-top: 11px;
+    word-break: break-word;
+}
+
+.lastname {
+    margin-left: 20px;
+}
+

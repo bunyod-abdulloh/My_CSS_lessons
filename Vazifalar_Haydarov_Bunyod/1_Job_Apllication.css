@@ -1,0 +1,122 @@
+.supernova {
+    background-image: none;
+    background-color: #e0f0fd;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #2c3345;
+}
+
+form {
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+.page-section-form {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.form-header {
+    padding: 10px 0px;
+    margin-bottom: 0px;
+}
+
+.form-subHeader {
+    margin-bottom: 20px;
+    
+}
+
+.bottom-line-one {
+    margin-left: -41px;
+    margin-top: 40px;
+    border-bottom: 1px solid #2c3345;
+}
+
+.form-title {
+    margin: 40px 0px 20px;
+}
+
+.yulduzcha {
+    color: red;
+}
+
+.form-sublabel-container {
+    display: flex;
+}
+
+.form-flex {
+    margin: 0px 40px 0px 0px;
+    flex: 1 1 100%;
+}
+
+.form-sublabel {
+    margin: 10px 40px 0px 0px;
+    font-size: 12px;
+    color: grey;
+}
+
+/*Radio button uchun container*/
+.form-control {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*Brauzerda radio buttonni yashirish*/
+.form-control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*Maxsus radio buttonga style berish*/
+.custom-radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 16px;
+    width: 16px;
+    background-color: none;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/*Sichqoncha olib borilganda orqa fon rangini o'zgartirish*/
+.form-control:hover input ~ .custom-radio {
+    background-color: #ccc;
+}
+
+/*Radio button tanlanganda uning orqa fon rangini o'zgartirish*/
+.form-control input:checked ~ .custom-radio {
+    background-color: orange;
+}
+
+/*Radio button tanlanganligini bildiruvchi belgi yaratish*/
+.custom-radio:after {
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/*Tanlangan paytda ko'rsatish*/
+.form-control input:checked ~ .custom-radio::after {
+    display: block;
+}
