@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="supernova">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./1_Job_Apllication.css">
+    <title>Form Job Apllication</title>
+</head>
+    <body>  
+        <form action="./server.php" class="jotform-form">
+            <ul class="page-section-form">
+                <h1 class="form-header">
+                    Job Application
+                </h1>
+                <div class="form-subHeader">
+                    Please complete the form below to apply for a position with us.
+                </div>
+                <div class="bottom-line-one"></div>
+                <div class="form-title">
+                    Full Name 
+                    <span class="yulduzcha">*</span>
+                </div>
+                <div class="form-sublabel-container">
+                    <div class="form-flex">
+                        <input type="text" id="first-name" name="first-name">
+                        <div class="form-sublabel">
+                            <label for="first-name">
+                                First Name
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <input type="text" id="middle-name" name="middle-name">
+                        <div class="form-sublabel">
+                            <label class="form-sublabel" for="middle-name">
+                                Middle Name
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <input type="text" id="last-name" name="last-name">
+                        <div class="form-sublabel">
+                            <label class="form-sublabel" for="last-name">
+                                Last Name
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+                <div class="form-title">
+                    Body Size 
+                    <span class="yulduzcha">*</span>
+                </div>
+                <div class="form-sublabel-container">
+                    <div class="form-flex">
+                        <input type="text" id="height" name="height" placeholder="sm">
+                        <div class="form-sublabel">
+                            <label for="height">
+                                Height
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <input type="text" id="weight" name="weight" placeholder="kg">
+                        <div class="form-sublabel">
+                            <label for="weight">
+                                Weight
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-title">
+                    Birth Date 
+                </div>
+                <div class="form-sublabel-container">
+                    <div class="form-flex">
+                        <select name="month" id="month">
+                            <option value="select-month">Please select a month</option>
+                            <option value="birinchi">Birinchi</option>
+                            <option value="ikkinchi">Ikkinchi</option>
+                        </select>
+                        <div class="form-sublabel">
+                            <label for="month">
+                                Month
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <select name="month" id="day">
+                            <option value="select-day">Please select a day</option>
+                            <option value="birinchi">1</option>
+                            <option value="ikkinchi">2</option>
+                        </select>
+                        <div class="form-sublabel">
+                            <label for="day">
+                                Day
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-flex">
+                        <select name="month" id="year">
+                            <option value="select-year">Please select a year</option>
+                            <option value="birinchi-yil">2024</option>
+                            <option value="ikkinchi-yil">2023</option>
+                        </select>
+                        <div class="form-sublabel">
+                            <label for="year">
+                                Year
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+                <div class="form-title">
+                    Family Status 
+                </div>
+                </label>
+                <label class="form-control">Divorced
+                    <input type="radio" checked="checked" name="radio" value="divorced">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="form-control">Married
+                    <input type="radio" checked="checked" name="radio" value="married">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="form-control">Single
+                    <input type="radio" checked="checked" name="radio" value="single">
+                    <span class="custom-radio"></span>
+                </label>
+                <label class="form-control">Other
+                    <input type="radio" name="radio" value="other" checked="checked">
+                    <span class="custom-radio other-radio"></span>
+                </label>
+                <!--
+                <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                    Click me to display Date and Time.
+                </button>
+                -->
+                
+                <!--
+                <input type="text" class="form-control other-input" placeholder="Other (please specify)">
+                -->
+                <div class="form-title">
+                    Current Address 
+                </div>
+                <div>
+                    <div>
+                        <input type="text" id="street" name="street" class="address-one-line">
+                        <div class="form-sublabel one-line-bottom">
+                            <label for="street">
+                                Street Address
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" id="street" name="street" class="address-one-line">
+                        <div class="form-sublabel one-line-bottom">
+                            <label for="street">
+                                Street Address Line 2
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-sublabel-container">
+                        <div class="form-flex">
+                            <input type="text" id="city" name="city">
+                            <div class="form-sublabel">
+                                <label for="city">
+                                    City
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-flex">
+                            <input type="text" id="state" name="street">
+                            <div class="form-sublabel">
+                                <label for="state">
+                                    State / Province
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" id="postal-zip" name="postal-zip" class="address-one-line">
+                        <div class="form-sublabel one-line-bottom">
+                            <label for="postal-zip">
+                                Postal / Zip Code
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        Email Address
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="ex: myname@example.com">
+                        <div class="form-sublabel">
+                            <label for="email">
+                                example@example.com
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        Phone Number
+                    </div>
+                    <div class="form-sublabel-container">
+                        <div class="form-flex">
+                            <input type="tel" name="phone" id="phone" placeholder="90" class="short-line">
+                            <div class="form-sublabel">
+                                <label for="area-code">
+                                    Area Code
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-flex">
+                            <input type="tel" name="phone" id="phone" placeholder="9000909" class="long-line">
+                            <div class="form-sublabel">
+                                <label for="phone-number">
+                                    Phone Number
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        LinkedIn 
+                    </div>
+                    <div class="form-sublabel-container">
+                        <div class="form-flex">
+                            <input type="text" id="linkedin" name="linkedin">
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        Experience
+                    </div>
+                    <div class="form-sublabel-container">
+                        <div class="form-flex">
+                            <input type="text" id="experience" name="experience">
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        Position Applied
+                    </div>
+                    <div class="form-sublabel-container">
+                        <div class="form-flex">
+                            <select name="select-position" id="select-position">
+                                <option value="select-position">Please Select</option>
+                                <option value="marketing-specialist">Marketing Specialis</option>
+                                <option value="sales-manager">Sales Manager</option>
+                                <option value="product-lead">Product Lead</option>
+                                <option value="developer">Developer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        How did you hear about us
+                    </div>
+                    <div class="form-sublabel-container">
+                        <div class="form-flex">
+                            <select name="select" id="select-about-us">
+                                <option value="select-about-us">Please Select</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="social-media">Social Media</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        Available Start Date
+                    </div>
+                    <div class="form-sublabel-container">
+                        <div class="form-flex">
+                            <input type="text" id="lite_mode_15" size="12" data-maxlength="12" data-age="" value="03/27/2024" data-format="mmddyyyy" data-seperator="/" placeholder="MM/DD/YYYY" data-placeholder="MM/DD/YYYY" autocomplete="off" aria-labelledby="label_15" inputmode="numeric" date-val="1711566000000">
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        Computer Skills
+                    </div>
+                    <table summary="" aria-labelledby="label_47" cellpadding="4" cellspacing="0" class="form-matrix-table" data-component="matrix">
+                        <tbody>
+                            <tr class="form-matrix-tr form-matrix-header-tr">
+                                <th class="form-matrix-th" style="border:none">&nbsp;</th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_0">
+                                    <label id="label_47_col_0">Beginner</label>
+                                </th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_1">
+                                    <label id="label_47_col_1">Elementary</label>
+                                </th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_2">
+                                    <label id="label_47_col_2">Advanced</label>
+                                </th>
+                                <th scope="col" class="form-matrix-headers form-matrix-column-headers form-matrix-column_3">
+                                    <label id="label_47_col_3">Expert</label>
+                                </th>
+                            </tr>
+                            <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_47 label_47_row_0">
+                                <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                    <label id="label_47_row_0">
+                                        Excel
+                                    </label>
+                                </th>
+                                <td class="form-matrix-values">
+                                    <input type="radio" id="input_47_0_0" class="form-radio" name="q47_computerSkills[0]" value="Beginner" aria-labelledby="label_47_col_0 label_47_row_0" aria-label="Cells Radio Button">
+                                    <label for="input_47_0_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                                </td>
+                                <td class="form-matrix-values">
+                                    <input type="radio" id="input_47_0_1" class="form-radio" name="q47_computerSkills[0]" value="Elementary" aria-labelledby="label_47_col_1 label_47_row_0" aria-label="Cells Radio Button">
+                                    <label for="input_47_0_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                                </td>
+                                <td class="form-matrix-values">
+                                    <input type="radio" id="input_47_0_2" class="form-radio" name="q47_computerSkills[0]" value="Advanced" aria-labelledby="label_47_col_2 label_47_row_0" aria-label="Cells Radio Button">
+                                    <label for="input_47_0_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                                </td>
+                                <td class="form-matrix-values">
+                                    <input type="radio" id="input_47_0_3" class="form-radio" name="q47_computerSkills[0]" value="Expert" aria-labelledby="label_47_col_3 label_47_row_0" aria-label="Cells Radio Button">
+                                    <label for="input_47_0_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                                </td>
+                            </tr>
+                            <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_47 label_47_row_1">
+                                <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                    <label id="label_47_row_1">
+                                        Word
+                                    </label>
+                                </th>
+                                <td class="form-matrix-values">
+                                <input type="radio" id="input_47_1_0" class="form-radio" name="q47_computerSkills[1]" value="Beginner" aria-labelledby="label_47_col_0 label_47_row_1" aria-label="Cells Radio Button">
+                                <label for="input_47_1_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_1_1" class="form-radio" name="q47_computerSkills[1]" value="Elementary" aria-labelledby="label_47_col_1 label_47_row_1" aria-label="Cells Radio Button">
+                                <label for="input_47_1_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_1_2" class="form-radio" name="q47_computerSkills[1]" value="Advanced" aria-labelledby="label_47_col_2 label_47_row_1" aria-label="Cells Radio Button">
+                                <label for="input_47_1_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_1_3" class="form-radio" name="q47_computerSkills[1]" value="Expert" aria-labelledby="label_47_col_3 label_47_row_1" aria-label="Cells Radio Button">
+                                <label for="input_47_1_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                        </tr>
+                        <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_47 label_47_row_2">
+                            <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                <label id="label_47_row_2">
+                                    1C
+                                </label>
+                            </th>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_2_0" class="form-radio" name="q47_computerSkills[2]" value="Beginner" aria-labelledby="label_47_col_0 label_47_row_2" aria-label="Cells Radio Button">
+                                <label for="input_47_2_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_2_1" class="form-radio" name="q47_computerSkills[2]" value="Elementary" aria-labelledby="label_47_col_1 label_47_row_2" aria-label="Cells Radio Button">
+                                <label for="input_47_2_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_2_2" class="form-radio" name="q47_computerSkills[2]" value="Advanced" aria-labelledby="label_47_col_2 label_47_row_2" aria-label="Cells Radio Button"><label for="input_47_2_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_2_3" class="form-radio" name="q47_computerSkills[2]" value="Expert" aria-labelledby="label_47_col_3 label_47_row_2" aria-label="Cells Radio Button">
+                                <label for="input_47_2_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                        </tr>
+                        <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_47 label_47_row_3">
+                            <th scope="row" class="form-matrix-headers form-matrix-row-headers">
+                                <label id="label_47_row_3">Programming Language</label>
+                            </th>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_3_0" class="form-radio" name="q47_computerSkills[3]" value="Beginner" aria-labelledby="label_47_col_0 label_47_row_3" aria-label="Cells Radio Button">
+                                <label for="input_47_3_0" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_3_1" class="form-radio" name="q47_computerSkills[3]" value="Elementary" aria-labelledby="label_47_col_1 label_47_row_3" aria-label="Cells Radio Button">
+                                <label for="input_47_3_1" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_3_2" class="form-radio" name="q47_computerSkills[3]" value="Advanced" aria-labelledby="label_47_col_2 label_47_row_3" aria-label="Cells Radio Button">
+                                <label for="input_47_3_2" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                            <td class="form-matrix-values">
+                                <input type="radio" id="input_47_3_3" class="form-radio" name="q47_computerSkills[3]" value="Expert" aria-labelledby="label_47_col_3 label_47_row_3" aria-label="Cells Radio Button">
+                                <label for="input_47_3_3" class="matrix-choice-label matrix-radio-label" aria-hidden="true"></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="form-title" data-type="control_scale" id="id_49">
+                    Ability knowing English Language
+                </div>
+                <div id="cid_49" class="form-input-wide" data-layout="full">
+                    <span class="form-sub-label-container" style="vertical-align:top">
+                        <div role="radiogroup" aria-labelledby="label_49 sublabel_input_49_description" cellpadding="4" cellspacing="0" class="form-scale-table" data-component="scale">
+                            <div class="rating-item-group">
+                                <div class="rating-item">
+                                    <span class="rating-item-title for-from">
+                                        <label for="input_49_worst" aria-hidden="true">
+                                            Worst
+                                        </label>
+                                    </span>
+                                    <input type="radio" aria-describedby="label_49" class="form-radio" name="q49_abilityKnowing49" value="1" title="1" id="input_49_1">
+                                    <label for="input_49_1">1</label>
+                                </div>
+                                <div class="rating-item">
+                                    <input type="radio" aria-describedby="label_49" class="form-radio" name="q49_abilityKnowing49" value="2" title="2" id="input_49_2">
+                                    <label for="input_49_2">2</label>
+                                </div>
+                                <div class="rating-item">
+                                    <input type="radio" aria-describedby="label_49" class="form-radio" name="q49_abilityKnowing49" value="3" title="3" id="input_49_3">
+                                    <label for="input_49_3">3</label>
+                                </div>
+                                <div class="rating-item">
+                                    <input type="radio" aria-describedby="label_49" class="form-radio" name="q49_abilityKnowing49" value="4" title="4" id="input_49_4">
+                                    <label for="input_49_4">4</label>
+                                </div>
+                                <div class="rating-item">
+                                    <span class="rating-item-title for-to">
+                                        <label for="input_49_best" aria-hidden="true">Best</label>
+                                    </span>
+                                    <input type="radio" aria-describedby="label_49" class="form-radio" name="q49_abilityKnowing49" value="5" title="5" id="input_49_5">
+                                    <label for="input_49_5">5</label>
+                                </div>
+                              </div>
+                            </div>
+                            <label class="form-sub-label" id="sublabel_input_49_description" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap">1 is Worst, 5 is Best</label>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="form-title">
+                        Applicant Document(Diploma, Certificate)
+                    </div>
+                    <div class="inputContainer" role="button" aria-label="Browse Files Drag and drop files here" tabindex="0">
+                        <input multiple="multiple" class="fileupload-input" id="input_44" type="file" name="file" aria-labelledby="label_44" aria-hidden="true" tabindex="-1">
+                    </div>
+                </div>
+                <div class="form-title">
+                    Upload Your Resume
+                </div>
+                <div class="inputContainer" role="button" aria-label="Browse Files Drag and drop files here" tabindex="0">
+                    <input multiple="multiple" class="fileupload-input" id="input_44" type="file" name="file" aria-labelledby="label_44" aria-hidden="true" tabindex="-1">
+                </div>
+                <div class="form-title">
+                    Cover Letter
+                </div>
+                <textarea id="input_22" class="form-textarea" name="q22_coverLetter" style="width:90%;height:163px" data-component="textarea" aria-labelledby="label_22"></textarea>
+                <div class="button-1">
+                    <button class="button-2">Apply</button>
+                </div>
+            </ul>
+        </form>
+    </body>
+</html>
