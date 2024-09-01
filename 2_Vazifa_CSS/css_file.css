@@ -1,0 +1,52 @@
+body.et_cover_background {
+    background-size: cover !important;
+    background-position: top !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+}
+
+.et_divi_theme .title_container h1 {
+    font-family: Poppins, sans-serif;
+    float: left;
+    font-size: 23px;
+    color: #20292f;
+    padding-top: 27px;
+    font-weight: 600;
+    padding-bottom: 0;
+    transition: padding-top 0.3s linear;
+}
+
+@media (min-width: 981px) {
+    .et_divi_theme.et_fullwidth_nav #main-header .container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+@media (min-width: 981px) {
+    .et_fullwidth_nav #main-header .container {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 32px;
+        padding-left: 30px;
+    }
+}
+.container.et_menu_container {
+    z-index: 99;
+}
+.container {
+    text-align: left;
+    position: relative;
+}
+.container {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.et_divi_theme.et_fixed_nav.et_show_nav #page-container {
+    padding-top: 64px;
+}
+.et_fixed_nav.et_show_nav #page-container {
+    padding-top: 80px;
+}
+
