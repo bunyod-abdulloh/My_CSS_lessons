@@ -6,12 +6,13 @@
 
 
 .heading {
+    font-family: sans-serif;
     color: blue;
-    font-size: 50px;
+    font-size: 24px;
 }
 
 
 h1 {
     color: green;
-    font-size: 15px;
+    font-size: 48px;
 }
