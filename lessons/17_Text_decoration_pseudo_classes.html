@@ -3,7 +3,11 @@
     <head>
         <title>Text decoration. Pseudo classes, qoidalarni guruhlash</title>
         <style>
-            /* Text decoration 
+            body {
+                background-color: grey;
+            }
+            /* Text decoration */
+            /*
             .heading-1 {
                 text-decoration: underline;
             }
@@ -17,7 +21,8 @@
             }
             */
             
-            /* Pseudo classes
+            /* Pseudo classes */
+            /*
             .heading-3:hover {
                 background-color: black;
                 color: whitesmoke;
@@ -27,11 +32,12 @@
             .heading-3:active {
                 background-color: orange;
                 color: black;
+                border-radius: 5px;
             }
             */
         
             /* Grouping rules */
-
+            
             .heading-4, .heading-5 {
                 background-color: orange;
                 color: black;
@@ -40,6 +46,7 @@
             .heading-5 {
                 border: 5px solid black;
             }
+            */
         </style>
     </head>
     <body>
@@ -57,16 +64,20 @@
         -->
 
         <!-- Pseudo classes -->
+        <!--
         <div>
             <h1 class="heading-3">Kursorni ushbu yozuv ustiga olib keling</h1>
         </div>
+        -->
         <!-- /Pseudo classes -->
 
         <!-- Grouping rules -->
+        
         <div>
             <h2 class="heading-4">Qoidalarni guruhlash</h2>
             <h3 class="heading-5">Bu sarlavha ham yuqoridagi kabi CSS xossaga ega bo'ladi</h3>
         </div>
+        
         <!-- /Grouping rules -->
     </body>
 </html>

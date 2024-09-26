@@ -1,0 +1,542 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('/2_Vazifa_CSS/fonts/Rubik/static/Rubik-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/2_Vazifa_CSS/fonts/Open_Sans_Poppins/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/2_Vazifa_CSS/fonts/Open_Sans_Poppins/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+/* Core styles */
+
+body {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1440px;
+}
+
+.to-uppercase {
+    text-transform: uppercase;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.title {
+    color: #FF8F00;
+    font: 500 14px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    letter-spacing: 1px;
+}
+
+.title-two {
+    font: 600 36px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    color: #333333;
+    margin-bottom: 1px; 
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.all-margin-left {
+    margin-left: 170px;
+}
+
+.blue-button {
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    font: 600 12px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    background-color: #2970FA;
+    text-decoration: none;
+    padding: 20px 40px;
+}
+
+/* Header section */
+
+#main-header {
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    position: fixed;
+    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
+    line-height: 23px;
+    width: 100%;
+    background-color: white;
+    z-index: 99999;
+    transition: background-color .4s, color .4s, transform .4s, opacity .4s ease-in-out, -webkit-transform .4s;
+}
+
+.main-header__brand {
+    display: inline-block;    
+}
+
+.main-header__brand a {
+    font-size: 23px;
+    font-weight: 600;
+    color: #20292f;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.main-navigation {
+    display: inline-block;
+    margin-left: 395px;
+}
+
+.main-navigation__item {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.main-navigation__item a {
+    color: #20292F;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.main-navigation__item a:hover {
+    color: red;
+}
+
+/* Main section styles */
+
+#main-section {
+    height: 545px;
+    background-size: contain;
+    background-position: center bottom 0px;
+    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-01.png), linear-gradient(237deg, #46b3ff 0%, #0752fe 100%) !important;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.main-section {
+    padding-top: 200px;
+    padding-bottom: 144px;
+}
+
+.main-section__items {    
+    background-repeat: no-repeat;
+}
+
+.main-section__items > div {
+    width: 50%;
+    float: left;
+}
+
+.main-section img {
+    height: 510px;
+    width: 460px;
+}
+
+
+.main-section__title {
+    margin-top: 60px;
+    font: 40px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    line-height: 70px;
+    color: white;
+}
+
+.main-section__item p {
+    font: 500 16px "Open Sans", Arial, sans-serif;
+    line-height: 35px;
+    color: white;
+    margin: -40px 35px 20px 0;
+}
+
+.main-section a {
+    display: inline-block;
+    color: #ffffff;
+    border-width: 0px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    letter-spacing: 2px;
+    font: 600 12px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    background-color: #263547;
+    text-decoration: none;
+    padding: 20px 40px;
+}
+
+.main-section__price {
+    display: inline-block;
+    margin-top: 150px;
+}
+
+.main-section__price p {
+    display: inline-block;
+    font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    padding-right: 50px;
+}
+
+.main-section__span-one {
+    font-size: 28px;
+}
+
+.main-section__span-two {
+    color: #2970fa;    
+    font-size: 50px;
+    margin-right: -7px;
+}
+
+.main-section__span-three {
+    color: #000000;
+    margin-left: 0s;
+    font-weight: 600;
+}
+
+.main-section__span-four {
+    font-size: 13px;
+    color: gray;
+}
+
+
+/* Our services */
+
+#our-services {
+    margin-top: 50px;
+    padding: 100px 0 0 150px;
+    font-family: 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+}
+
+
+.our-services__title {
+    width: 52%;
+    margin-left: 100px;
+    float: left;
+}
+
+.our-services__h-three {
+    margin-top: 15px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.our-services__title a {
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;    
+    background-color: #2970FA;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+.our-services__subtitle {
+    font: 600 23px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    color: #333333;
+}
+
+.our-services__photo-one {
+    width: 500px;
+    height: 400px;
+    float: right;
+}
+
+.our-services__first-line {
+    display: block;
+    width: 60px;
+    margin-top: 20px;
+    border: 1px solid goldenrod;
+}
+
+.our-services__text {
+    line-height: 2em;
+    font: 14px, "Open Sans", Arial, sans-serif;
+    color: #666666;
+    padding-right: 40%;
+    margin-bottom: 20px;
+}
+
+
+.click-here {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2970FA;
+    letter-spacing: 1px;
+}
+
+.arrow {
+    background-color: #2970FA;
+    color: white;
+    padding: 1px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.our-services__photo-two {
+    float: left;
+    width: 33%;
+    margin-top: 63px;
+    margin-left: 25px;
+}
+
+.our-services__photo-three {
+    float: left;
+    width: 400px;
+    height: 500px;
+    margin-top: -50px;
+}
+
+.our-services__photo-four {
+    float: left;
+    width: 400px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+/* Our features */
+
+#our-features {
+    margin-top: 700px;
+}
+
+.our-features__first-section {
+    float: left;
+    width: 45%;
+}
+
+.our-features__text {
+    font: 18px "Open Sans", Arial, sans-serif;
+    line-height: 2em;
+    color: #666666;
+    padding-right: 50px;
+}
+
+.our-features__first-image {
+    float: right;    
+    width: 55%;
+}
+
+.our-features__first-image img {
+    width: 500px;
+    height: 350px;
+    padding-left: 50px;
+}
+
+.our-features__icons {
+    margin-top: 100px;
+}
+
+.our-features__first-icons {
+    display: flex;
+    flex-direction: row; /* Elementlarni vertikal qilish */
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 100px;    
+    width: 85%; /* O'zingizga mos kenglik qo'yishingiz mumkin */
+}
+
+.our-features__first-icons img {
+    padding-right: 10px;
+}
+
+.our-features__first-icons p {
+    font: 14px "Open Sans", Arial, sans-serif;
+    line-height: 2em;
+    color: #666666;
+    margin-right: 10px;
+}
+
+.our-features__second-icons {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+.our-features__second-icons img {
+    padding-right: 10px;
+}
+
+.our-features__second-icons p {
+    font: 14px "Open Sans", Arial, sans-serif;
+    line-height: 2em;
+    color: #666666;
+    margin-right: 10px;
+}
+
+/* Pricing */
+
+#pricing {
+    margin-top: 100px;
+}
+
+.pricing-title {
+    text-align: center;
+}
+
+.pricing-cards {
+    margin-top: 100px;
+}
+
+.pricing-card {
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+}
+
+.pricing-card h4 {
+    font: 600 18px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    letter-spacing: 1px;
+    color: #ff8f00;
+    margin-left: 1.25rem;
+    padding-bottom: 0.625rem;
+}
+
+.pricing-card p {
+    font: 600 50px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    color: #000000;
+    padding-bottom: 0.625rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    position: relative;
+    margin-left: 12px;
+}
+
+sup {
+    font: 18px 'Open Sans', Arial, sans-serif;
+    margin-left: 0;
+    color: #999999;
+    position: absolute;
+}
+
+.month {
+    font-size: 18px;
+    font-weight: 300;
+    color: #999999;
+    margin-left: -15px;
+}
+
+li {
+    font: 16px 'Open Sans', Arial, sans-serif;
+    color: #666666;
+    line-height: 3.125rem;
+    color: #ff8f00;
+}
+
+.two {
+    color: #cccccc;
+}
+
+.choices {
+    color: #666666;
+}
+
+.pricing-card button {
+    margin-left: 5rem;
+    margin-bottom: 0.625rem;
+    font: 600 12px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    letter-spacing: 2px;
+    padding: 18px 20px;
+    border-radius: 6px;
+    border: none;
+}
+
+.pricing-btn {    
+    color: #ff8f00;
+    background: #ff8f001a;
+}
+ 
+.pricing-btn-2 {
+    color: #ffffff;
+    background: #2970fa;
+}
+ 
+.choice-2 {
+    color: #2970fa;
+}
+
+.choice-3 {
+    color: #29cf8d;
+}
+
+.pricing-btn-3 {
+    color: #29cf8d;
+    background: #29cf8d1a;
+}
+
+/* File management */
+
+#file-management {
+    margin-top: 150px;
+}
+
+.file-management-left {
+    float: left;
+    width: 43%;    
+}
+
+.file-management__images {
+    margin-top: 50px;
+}
+
+.file-management__images img {
+    float: left;
+    width: auto;
+}
+
+.file-management__small-title {    
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.file-management__small-title h4 {
+    font: 600 18px 'Rubik', Helvetica, Arial, Lucida, sans-serif;
+    color: #333333;
+    margin-top: -5px;
+}
+
+.file-management__small-title p {
+    font: 14px 'Open Sans', Arial, sans-serif;
+    color: #666666;
+    margin-top: -15px;
+    line-height: 30px;
+}
+
+.file-management__h4-p {
+    margin-left: 50px;
+}
+
+#file-management__big-image {
+    float: right;
+    width: 47%;
+}
+
+.file-management__big-image img {
+    width: 450px;
+    height: 420px;
+}
+
+.file-management__big-image a {
+    margin-top: 20px;
+}
+
+/* Talk with */
+
+#talk-with {
+    margin-top: 50px;
+    height: 600px;
+    background-size: contain;
+    background-position: center top;
+    background-image: url(https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-02.png), linear-gradient(150deg, rgb(255, 186, 97) 0%, rgb(255, 233, 112) 100%) !important;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    /*background: linear-gradient(150deg, #ffba61 0%, #ffe970 100%) !important;*/
+}
