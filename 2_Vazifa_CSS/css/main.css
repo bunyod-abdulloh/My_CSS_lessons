@@ -59,6 +59,7 @@ body {
     background-color: #2970FA;
     text-decoration: none;
     padding: 20px 40px;
+    cursor: pointer;
 }
 
 .black-button {
@@ -70,14 +71,15 @@ body {
     background-color: #263547;
     text-decoration: none;
     padding: 20px 40px;
+    cursor: pointer;;
 }
 
 /* Header section */
 
 #main-header {
+    position: fixed;    
     font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
-    position: fixed;
-    box-shadow: 0 0 30px rgba(7, 51, 84, 0.17) !important;
+    box-shadow: 0 0 30px rgba(1, 14, 26, 0.17) !important;
     line-height: 23px;
     width: 100%;
     background-color: white;
@@ -111,11 +113,11 @@ body {
     color: #20292F;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: lighter;
 }
 
 .main-navigation__item a:hover {
-    color: red;
+    color: gray;
 }
 
 /* Main section styles */
@@ -733,7 +735,7 @@ li {
     display: inline-block;
     width: 50%;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 250px;
     margin-left: 350px;
 }
 
